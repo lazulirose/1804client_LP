@@ -1,0 +1,19 @@
+/*****-------------------------------
+    Layout
+-------------------------------*****/
+
+.l-header {
+    @include mq-up(md) {
+    }
+}
+.l-container {
+    @include mq-up(md) {
+    }
+    @include mq-up(lg) {
+    }
+    @include mq-up(xl) {
+    }
+}
+.l-footer {
+
+}

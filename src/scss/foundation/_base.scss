@@ -1,0 +1,41 @@
+/*****-------------------------------
+    Common initial setting
+-------------------------------*****/
+
+body {
+    overflow-x: hidden;
+    @include font-family("");
+    font-size: 14px;
+    color: $main-font;
+    @include mq-up(lg) {
+        font-size: 16px;
+    }
+}
+
+main {
+}
+
+a {
+}
+
+/*****-------------------------------
+    Mediaquery initial setting
+-------------------------------*****/
+
+.pc-only {
+    display: none;
+    @include mq-up(md) {
+        display: block;
+    }
+}
+
+.sp-only {
+    @include mq-up(md) {
+        display: none;
+    }
+}
+
+
+/*****-------------------------------
+    Custom common setting
+-------------------------------*****/
