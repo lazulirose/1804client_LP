@@ -2,9 +2,9 @@
 ## Design Guidelines
 ### 基本仕様
 - [使用フォント](#使用フォント)
-- 使用カラー
-- 画像のファイル命名規則
-- UIコンポーネント
+- [使用カラー](#使用カラー)
+- [画像のファイル命名規則](#画像のファイル命名規則)
+- [UIコンポーネント](#uiコンポーネント)
 
 ### 使用フォント
 ロゴ
@@ -28,14 +28,17 @@
 - 半角英数字を使用
 - 番号は0埋めしない
 
+
+### UIコンポーネント
+
 ---
 ## Coding Guidelines
 
 ### 基本仕様
-- HTML5
-- SCSS(CSS3/CSS2.1)
-- Javascript
-- PHP
+- [HTML5](#html)
+- [SCSS(CSS3/CSS2.1)](#scsscss3css2)
+- [JavaScript](#javascript)
+- [PHP](#php)
 
 ---
 ### ディレクトリ構成
