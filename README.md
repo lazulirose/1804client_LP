@@ -36,7 +36,7 @@
 
 ### 基本仕様
 - [HTML5](#html)
-- [SCSS(CSS3/CSS2.1)](#scsscss3css2)
+- [SCSS(CSS3/CSS2.1)](#scsscss3css21)
 - [JavaScript](#javascript)
 - [PHP](#php)
 
