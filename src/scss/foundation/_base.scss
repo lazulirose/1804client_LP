@@ -3,8 +3,9 @@
 -------------------------------*****/
 
 body {
+    font-family: '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif;
+    font-weight: 500;
     overflow-x: hidden;
-    @include font-family("");
     font-size: 14px;
     color: $main-font;
     @include mq-up(lg) {
@@ -12,11 +13,10 @@ body {
     }
 }
 
-main {
-}
+main {}
 
-a {
-}
+a {}
+
 
 /*****-------------------------------
     Mediaquery initial setting
