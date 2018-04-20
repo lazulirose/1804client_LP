@@ -221,7 +221,7 @@ button {
 .open-anime.c-nav__toggle {
   -webkit-transition: all .25s .25s;
   transition: all .25s .25s;
-  background-color: #bbb; }
+  background-color: #fff; }
 
 .open-anime.c-nav__toggle::after {
   -webkit-animation: menu-bar02 .75s forwards;
@@ -248,7 +248,8 @@ button {
 
 .close-anime.c-nav__toggle::before {
   -webkit-animation: active-menu-bar01 .75s forwards;
-  animation: active-menu-bar01 .75s forwards; }
+  animation: active-menu-bar01 .75s forwards;
+  background-color: #bbb; }
 
 @-webkit-keyframes active-menu-bar01 {
   0% {
@@ -270,12 +271,13 @@ button {
             transform: translateY(10px) rotate(45deg); } }
 
 .close-anime.c-nav__toggle {
-  background-color: #fff; }
+  background-color: transparent; }
 
 .close-anime.c-nav__toggle::after {
   opacity: 1;
   -webkit-animation: active-menu-bar03 .75s forwards;
-  animation: active-menu-bar03 .75s forwards; }
+  animation: active-menu-bar03 .75s forwards;
+  background-color: #bbb; }
 
 @-webkit-keyframes active-menu-bar03 {
   0% {
@@ -341,7 +343,7 @@ body {
   z-index: 2000;
   width: 35px;
   height: 3px;
-  background-color: #bbb;
+  background-color: #fff;
   color: transparent; }
   .c-nav__toggle::before, .c-nav__toggle::after {
     position: absolute;
@@ -349,15 +351,23 @@ body {
     display: block;
     width: 35px;
     height: 3px;
-    background-color: #bbb;
+    background-color: #fff;
     content: ""; }
   .c-nav__toggle::after {
     top: 10px; }
   .c-nav__toggle::before {
     bottom: 10px; }
-  .c-nav__toggle button {
-    position: absolute;
-    top: -20px;
-    display: block;
-    width: 50px;
-    height: 50px; }
+
+.menu__tag {
+  position: absolute;
+  bottom: -5px;
+  right: 45px;
+  color: #fff; }
+
+.menu__button {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  display: block;
+  width: 90px;
+  height: 44px; }

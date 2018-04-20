@@ -9,7 +9,7 @@
     z-index: 2000;
     width: 35px;
     height: 3px;
-    background-color: #bbb;
+    background-color: #fff;
     color: transparent;
     &::before,
     &::after {
@@ -18,7 +18,7 @@
         display: block;
         width: 35px;
         height: 3px;
-        background-color: #bbb;
+        background-color: #fff;
         content: "";
     }
     &::after {
@@ -27,11 +27,20 @@
     &::before {
         bottom: 10px;
     }
-    button {
-        position: absolute;
-        top: -20px;
-        display: block;
-        width: 50px;
-        height: 50px;
-    }
+}
+
+.menu__tag {
+    position: absolute;
+    bottom: -5px;
+    right: 45px;
+    color: #fff;
+}
+
+.menu__button {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    display: block;
+    width: 90px;
+    height: 44px;
 }

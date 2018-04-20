@@ -39,7 +39,7 @@
 
 .open-anime.c-nav__toggle {
     transition: all .25s .25s;
-    background-color: #bbb;
+    background-color: #fff;
 }
 
 .open-anime.c-nav__toggle::after {
@@ -74,6 +74,7 @@
 .close-anime.c-nav__toggle::before {
     -webkit-animation: active-menu-bar01 .75s forwards;
     animation: active-menu-bar01 .75s forwards;
+    background-color: #bbb;
 }
 
 @-webkit-keyframes active-menu-bar01 {
@@ -101,13 +102,14 @@
 }
 
 .close-anime.c-nav__toggle {
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .close-anime.c-nav__toggle::after {
     opacity: 1;
     -webkit-animation: active-menu-bar03 .75s forwards;
     animation: active-menu-bar03 .75s forwards;
+    background-color: #bbb;
 }
 
 @-webkit-keyframes active-menu-bar03 {
