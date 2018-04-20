@@ -20,7 +20,14 @@
 
 <body>
     <header class="l-header">
-
+        <nav class="c-nav">
+            <h1 class="c-nav__logo">
+                <a href="" class="logo"></a>
+            </h1>
+            <div class="c-nav__toggle" id="is-menuclose"><button class="" onclick="navigationTrigger()"></button></div>
+            <div id="is-open">
+            </div>
+        </nav>
     </header>
     <!-- /.l-header -->
     <main class="l-container">
@@ -98,6 +105,22 @@
     <footer class="l-footer">
     </footer>
     <!-- /.l-footer -->
+    <script>
+        function navigationTrigger() {
+            var x = document.getElementById("is-open");
+            var y = document.getElementById("is-menuclose");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+                y.classList.remove("close-anime");
+                y.classList.add("open-anime");
+            } else {
+                x.style.display = "block";
+                y.classList.remove("open-anime");
+                y.classList.add("close-anime");
+            }
+        }
+
+    </script>
 </body>
 
 </html>

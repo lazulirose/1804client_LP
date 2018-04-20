@@ -153,7 +153,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-input, select {
+input,
+select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -169,12 +170,135 @@ input, select {
           box-sizing: content-box;
   overflow: hidden; }
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
 .vertical-align {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
 
+#is-open {
+  display: none;
+  position: absolute;
+  z-index: 200;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: #fff; }
+
+.open-anime.c-nav__toggle::before {
+  -webkit-animation: menu-bar01 .75s forwards;
+  animation: menu-bar01 .75s forwards; }
+
+@-webkit-keyframes menu-bar01 {
+  0% {
+    -webkit-transform: translateY(10px) rotate(45deg); }
+  50% {
+    -webkit-transform: translateY(10px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(0) rotate(0); } }
+
+@keyframes menu-bar01 {
+  0% {
+    -webkit-transform: translateY(10px) rotate(45deg);
+            transform: translateY(10px) rotate(45deg); }
+  50% {
+    -webkit-transform: translateY(10px) rotate(0);
+            transform: translateY(10px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0); } }
+
+.open-anime.c-nav__toggle {
+  -webkit-transition: all .25s .25s;
+  transition: all .25s .25s;
+  background-color: #bbb; }
+
+.open-anime.c-nav__toggle::after {
+  -webkit-animation: menu-bar02 .75s forwards;
+  animation: menu-bar02 .75s forwards; }
+
+@-webkit-keyframes menu-bar02 {
+  0% {
+    -webkit-transform: translateY(-10px) rotate(-45deg); }
+  50% {
+    -webkit-transform: translateY(-10px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(0) rotate(0); } }
+
+@keyframes menu-bar02 {
+  0% {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+            transform: translateY(-10px) rotate(-45deg); }
+  50% {
+    -webkit-transform: translateY(-10px) rotate(0);
+            transform: translateY(-10px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0); } }
+
+.close-anime.c-nav__toggle::before {
+  -webkit-animation: active-menu-bar01 .75s forwards;
+  animation: active-menu-bar01 .75s forwards; }
+
+@-webkit-keyframes active-menu-bar01 {
+  0% {
+    -webkit-transform: translateY(0) rotate(0); }
+  50% {
+    -webkit-transform: translateY(10px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(10px) rotate(45deg); } }
+
+@keyframes active-menu-bar01 {
+  0% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0); }
+  50% {
+    -webkit-transform: translateY(10px) rotate(0);
+            transform: translateY(10px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(10px) rotate(45deg);
+            transform: translateY(10px) rotate(45deg); } }
+
+.close-anime.c-nav__toggle {
+  background-color: #fff; }
+
+.close-anime.c-nav__toggle::after {
+  opacity: 1;
+  -webkit-animation: active-menu-bar03 .75s forwards;
+  animation: active-menu-bar03 .75s forwards; }
+
+@-webkit-keyframes active-menu-bar03 {
+  0% {
+    -webkit-transform: translateY(0) rotate(0); }
+  50% {
+    -webkit-transform: translateY(-10px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(-10px) rotate(-45deg); } }
+
+@keyframes active-menu-bar03 {
+  0% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0); }
+  50% {
+    -webkit-transform: translateY(-10px) rotate(0);
+            transform: translateY(-10px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+            transform: translateY(-10px) rotate(-45deg); } }
+
+/*****-------------------------------
+    Utility
+-------------------------------*****/
 /*****-------------------------------
     Common initial setting
 -------------------------------*****/
@@ -204,3 +328,36 @@ body {
 /*****-------------------------------
     Custom common setting
 -------------------------------*****/
+/*****-------------------------------
+    Layout
+-------------------------------*****/
+.c-nav {
+  position: relative; }
+
+.c-nav__toggle {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  z-index: 2000;
+  width: 35px;
+  height: 3px;
+  background-color: #bbb;
+  color: transparent; }
+  .c-nav__toggle::before, .c-nav__toggle::after {
+    position: absolute;
+    right: 0px;
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #bbb;
+    content: ""; }
+  .c-nav__toggle::after {
+    top: 10px; }
+  .c-nav__toggle::before {
+    bottom: 10px; }
+  .c-nav__toggle button {
+    position: absolute;
+    top: -20px;
+    display: block;
+    width: 50px;
+    height: 50px; }
