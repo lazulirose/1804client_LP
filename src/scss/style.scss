@@ -1,13 +1,49 @@
 @charset "UTF-8";
+
+/*****-------------------------------
+
+    Foundation setting
+
+-------------------------------*****/
+
 @import "foundation/reset";
 @import "foundation/form-reset";
 @import "foundation/mixin/color";
 @import "foundation/mixin/fonts";
 @import "foundation/mixin/mediaquery";
 @import "foundation/mixin/mixins_extends";
+@import "foundation/base";
+
+/*****-------------------------------
+
+    Utility setting
+
+-------------------------------*****/
+
 @import "object/utility/animation";
 @import "object/utility/utility";
-@import "foundation/base";
+
+/*****-------------------------------
+
+    Layout setting
+
+-------------------------------*****/
+
 @import "layout/default";
+
+/*****-------------------------------
+
+    Component setting
+
+-------------------------------*****/
+
 @import "object/component/nav";
-//@import "object/project/";
+
+/*****-------------------------------
+
+    Project common setting
+
+-------------------------------*****/
+
+@import "object/project/common";
+@import "object/project/keyviasual";

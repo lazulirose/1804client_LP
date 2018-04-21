@@ -3,17 +3,30 @@
 -------------------------------*****/
 
 .l-header {
-    @include mq-up(md) {
-    }
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    @include mq-up(md) {}
 }
-.l-container {
-    @include mq-up(md) {
-    }
-    @include mq-up(lg) {
-    }
-    @include mq-up(xl) {
-    }
-}
-.l-footer {
 
+.l-keyviasual {
+    position: relative;
 }
+
+.l-keyviasual::before {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    content: "";
+}
+
+.l-container {
+    @include mq-up(md) {}
+    @include mq-up(lg) {}
+    @include mq-up(xl) {}
+}
+
+.l-footer {}

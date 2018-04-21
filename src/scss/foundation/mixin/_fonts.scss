@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
 // font-size
 @mixin font-size($size: 24,
 $base: 16) {
@@ -46,6 +46,12 @@ $important: false) {
         'MS PGothic',
         sans-serif#{$important};
     }
+    @else if $type==yugothic {
+        font-family: '游ゴシック体',
+        'Yu Gothic',
+        YuGothic,
+        sans-serif#{$important};
+    }
     @else if $type==monospace {
         font-family: monospace#{$important};
     }
@@ -83,6 +89,10 @@ $important: false) {
         "ヒラギノ明朝 ProN W3",
         "Hiragino Mincho ProN",
         serif#{$important};
+    }
+    @else if $type==en {
+        font-family: 'Montserrat',
+        sans-serif#{$important};
     }
 }
 
