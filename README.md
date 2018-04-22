@@ -80,12 +80,11 @@ root
 ### SCSS(CSS3/CSS2.1)
 - [FLOCSS](https://github.com/hiloki/flocss)を使用
   -  命名ルール：MindBEMding
-  -  jsで扱うCSSは接頭辞 ` js- ` を指定
+  -  jsで扱うCSSは接頭辞 ` js- ` を指定しIDを使用
 - マルチクラスではなくシングルクラスになるように、SCSSのmixinとextendを使用
   - mixinは原則として引数を使用し、スタイルの差分を想定されるもののみに使用
     - mixinは色やサイズが変わるパーツに使用
   - extendは丸角や影、背景のエフェクト、ホバーアニメーションなどに使用
-- ページ内リンクとして機能させる用途以外にIDを使用禁止
 - style.cssとして1ファイルにまとめる
   -  HTML内で使用するのはミニファイしたファイルを使用
 - プロパティの書き順は、Mozillaに倣い以下の通り
@@ -93,6 +92,7 @@ root
 - 小数点以下の値を使用するときは、 ` 0 ` を省略
 - line-heightは単位なしで指定する
 - セクションのmarginは、left,bottomに指定
+- `::before` `::after` の疑似要素の使用は視覚的なレイヤー構造に従う
 
 #### CSSプロパティ順
 ```
