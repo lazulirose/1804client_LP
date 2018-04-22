@@ -22,16 +22,14 @@ $breakpoint-down: ( 'sm': 'screen and (max-width: 480px)', 'md': 'screen and (ma
 /*****-------------------------------
     Mediaquery initial setting
 -------------------------------*****/
-//
-//.pc-only {
-//    display: none;
-//    @include mq-up(md) {
-//        display: block;
-//    }
-//}
-//
-//.sp-only {
-//    @include mq-up(md) {
-//        display: none;
-//    }
-//}
+.pc-only {
+    display: none;
+    @include mq-up(md) {
+        display: block;
+    }
+}
+.sp-only {
+    @include mq-up(md) {
+        display: none;
+    }
+}

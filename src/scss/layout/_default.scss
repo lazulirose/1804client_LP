@@ -9,18 +9,17 @@
     @include mq-up(md) {}
 }
 
-.l-keyviasual {
-    position: relative;
-}
-
-.l-keyviasual::before {
-    display: block;
-    position: absolute;
-    z-index: 100;
+.l-loading {
+    background: #fff;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, .3);
-    content: "";
+    position: fixed;
+    z-index: 1000000;
+    overflow: hidden;
+}
+
+.l-keyviasual {
+    position: relative;
 }
 
 .l-container {

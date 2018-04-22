@@ -1,3 +1,10 @@
+.p-keyviasual {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+}
+
 .p-keyviasual__bg {
     position: fixed;
     right: 0;
@@ -6,5 +13,45 @@
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1;
+    z-index: -1000;
+}
+
+.p-keyviasual__text {
+    position: absolute;
+    left: 0;
+    bottom: 180px;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2;
+    //-webkit-animation: ;
+    animation: text 7s;
+}
+
+.p-keyviasual__scroll {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.p-keyviasual__scroll__text {
+    margin-bottom: 5px;
+    @include font-family("en");
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+.p-keyviasual__scroll__arrow {
+    width: 20px;
+    fill: #fff;
+    text-align: center;
+    -webkit-animation: arrow-down 1.35s ease 2s infinite;
+    animation: arrow-down 1.35s ease 2s infinite;
 }

@@ -35,7 +35,7 @@
 .close-anime.c-nav__toggle::before {
     -webkit-animation: active-menu-bar01 .75s forwards;
     animation: active-menu-bar01 .75s forwards;
-    background-color: #bbb;
+    background-color: #000;
 }
 
 .close-anime.c-nav__toggle {
@@ -46,13 +46,42 @@
     opacity: 1;
     -webkit-animation: active-menu-bar03 .75s forwards;
     animation: active-menu-bar03 .75s forwards;
-    background-color: #bbb;
+    background-color: #000;
 }
 
 
 /*****-------------------------------
     Animations
 -------------------------------*****/
+
+
+/* --- loding --- */
+
+@keyframes text-in {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(100px);
+    }
+    50% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateX(300px);
+    }
+}
+
+@keyframes text-down {
+    67% {
+        top: 0;
+        opacity: .8;
+    }
+    100% {
+        top: 50px;
+        opacity: 0;
+    }
+}
 
 
 /* --- nav open --- */
@@ -153,5 +182,65 @@
     }
     100% {
         transform: translateY(-13px) rotate(-45deg);
+    }
+}
+
+
+/* --- show text --- */
+
+@keyframes text {
+    0% {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(25px);
+        opacity: 0;
+        text-shadow: 1px 1px 1px #fff;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        text-shadow: none;
+    }
+}
+
+@-webkit-keyframes text {
+    0% {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(25px);
+        opacity: 0;
+        text-shadow: 1px 1px 1px #fff;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        text-shadow: none;
+    }
+}
+
+
+/* --- scroll down --- */
+
+@keyframes arrow-down {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes arrow-down {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
     }
 }
