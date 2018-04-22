@@ -22,6 +22,8 @@
     position: relative;
 }
 
+.l-about {}
+
 .l-container {
     @include mq-up(md) {}
     @include mq-up(lg) {}
