@@ -476,6 +476,7 @@ video {
   position: relative; }
 
 .l-about {
+  position: relative;
   padding: 50px 20px;
   background-color: #fff; }
 
@@ -626,12 +627,14 @@ video {
 
 .p-about__viasual {
   display: block;
-  position: relative; }
+  position: relative;
+  z-index: 2; }
 
-.p-about__viasual::before {
+.p-about__body::before {
   display: block;
   position: absolute;
-  left: 0;
+  top: 150px;
+  right: 20px;
   width: 324px;
   height: 200px;
   background-color: #1aa1e6;
