@@ -477,8 +477,26 @@ video {
 
 .l-about {
   position: relative;
-  padding: 50px 20px;
+  z-index: 5;
+  padding: 50px 20px 0 20px;
   background-color: #fff; }
+
+.l-contents {
+  position: relative;
+  padding: 50px 20px 0 20px;
+  background-color: rgba(26, 161, 230, 0.2); }
+
+.l-contents::after {
+  position: absolute;
+  display: block;
+  top: -85px;
+  left: -50px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  width: 120%;
+  height: 200px;
+  background-color: #fff;
+  content: ""; }
 
 /*****-------------------------------
 
@@ -534,7 +552,9 @@ video {
   height: 44px; }
 
 .c-sectiontitel {
-  margin-bottom: 2px;
+  position: relative;
+  z-index: 100;
+  margin-bottom: 8px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #393939;
@@ -542,6 +562,8 @@ video {
   text-align: center; }
 
 .c-sectiontext {
+  position: relative;
+  z-index: 100;
   margin-bottom: 30px;
   color: #6f6f6f;
   text-align: center; }
@@ -579,7 +601,7 @@ video {
   background-color: rgba(0, 0, 0, 0.3); }
 
 .p-keyviasual__bg {
-  position: fixed;
+  position: relative;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -599,7 +621,7 @@ video {
   text-align: center;
   line-height: 2;
   -webkit-animation: text 7s;
-          animation: text 7s; }
+  animation: text 7s; }
 
 .p-keyviasual__scroll {
   position: absolute;
@@ -633,7 +655,7 @@ video {
 .p-about__body::before {
   display: block;
   position: absolute;
-  top: 150px;
+  top: 158px;
   right: 20px;
   width: 324px;
   height: 200px;

@@ -24,9 +24,30 @@
 
 .l-about {
     position: relative;
-    padding: 50px 20px;
+    z-index: 5;
+    padding: 50px 20px 0 20px;
     background-color: #fff;
 }
+
+.l-contents {
+    position: relative;
+    padding: 50px 20px 0 20px;
+    background-color: rgba($main, .2);
+}
+
+.l-contents::after {
+    position: absolute;
+    display: block;
+    top: -85px;
+    left: -50px;
+    transform: rotate(-10deg);
+    width: 120%;
+    height: 200px;
+    background-color: #fff;
+    content: "";
+}
+
+.l-contents {}
 
 .l-container {
     @include mq-up(md) {}

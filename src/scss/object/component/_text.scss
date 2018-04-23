@@ -1,5 +1,7 @@
 .c-sectiontitel {
-    margin-bottom: 2px;
+    position: relative;
+    z-index: 100;
+    margin-bottom: 8px;
     @include font-family("en");
     font-weight: bold;
     color: #393939;
@@ -8,6 +10,8 @@
 }
 
 .c-sectiontext {
+    position: relative;
+    z-index: 100;
     margin-bottom: 30px;
     color: #6f6f6f;
     text-align: center;
