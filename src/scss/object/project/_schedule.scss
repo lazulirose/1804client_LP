@@ -1,0 +1,64 @@
+.p-schedule__cards {
+    position: relative;
+    top: -150px;
+    padding: 0 20px;
+    .c-card {
+        margin-bottom: 30px;
+    }
+    .c-bach {
+        left: 0;
+        right: 0;
+        margin: 15px auto;
+        width: 45px;
+        height: 15px;
+        font-size: 9px;
+        line-height: 1.8;
+    }
+    .c-card__media {
+        height: 140px;
+    }
+    .c-card__body {
+        position: relative;
+        top: -2px;
+    }
+}
+
+.c-card__title {
+    padding-top: 40px;
+    margin-bottom: 20px;
+    font-size: 19px;
+    text-align: center;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+.contains {
+    transition: 0.2s;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+}
+
+input:checked+.contains {
+    height: auto;
+}
+
+.c-card__arrow {
+    position: relative;
+    top: -4px;
+    width: 40px;
+    padding: 0 13px;
+    margin: auto;
+    vertical-align: middle;
+    background-color: #fff;
+    svg {
+        margin-top: 3px;
+    }
+}
