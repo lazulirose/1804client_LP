@@ -216,7 +216,7 @@ body {
   font-weight: 500;
   overflow-x: hidden;
   font-size: 14px;
-  color: #fff; }
+  color: #333; }
   @media screen and (min-width: 992px) {
     body {
       font-size: 16px; } }
@@ -475,6 +475,10 @@ video {
 .l-keyviasual {
   position: relative; }
 
+.l-about {
+  padding: 50px 20px;
+  background-color: #fff; }
+
 /*****-------------------------------
 
     Component setting
@@ -527,6 +531,19 @@ video {
   display: block;
   width: 90px;
   height: 44px; }
+
+.c-sectiontitel {
+  margin-bottom: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #393939;
+  font-size: 50px;
+  text-align: center; }
+
+.c-sectiontext {
+  margin-bottom: 30px;
+  color: #6f6f6f;
+  text-align: center; }
 
 /*****-------------------------------
 
@@ -595,6 +612,7 @@ video {
 .p-keyviasual__scroll__text {
   margin-bottom: 5px;
   font-family: "Montserrat", sans-serif;
+  color: #fff;
   text-align: center;
   font-size: 9px;
   letter-spacing: 3px; }
@@ -605,3 +623,34 @@ video {
   text-align: center;
   -webkit-animation: arrow-down 1.35s ease 2s infinite;
   animation: arrow-down 1.35s ease 2s infinite; }
+
+.p-about__viasual {
+  display: block;
+  position: relative; }
+
+.p-about__viasual::before {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 324px;
+  height: 200px;
+  background-color: #1aa1e6;
+  content: ""; }
+
+.p-about__body {
+  padding: 25px 0; }
+
+.p-about__body__copy {
+  text-align: center; }
+  .p-about__body__copy span {
+    display: inline-block;
+    padding: 0 23px;
+    margin-bottom: 18px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 2.5;
+    background-color: #1aa1e6; }
+
+.p-about__body__text {
+  line-height: 1.8; }

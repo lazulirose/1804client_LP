@@ -22,7 +22,10 @@
     position: relative;
 }
 
-.l-about {}
+.l-about {
+    padding: 50px 20px;
+    background-color: #fff;
+}
 
 .l-container {
     @include mq-up(md) {}

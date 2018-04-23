@@ -1,3 +1,14 @@
-.c-sectiontitel {}
+.c-sectiontitel {
+    margin-bottom: 2px;
+    @include font-family("en");
+    font-weight: bold;
+    color: #393939;
+    font-size: 50px;
+    text-align: center;
+}
 
-.c-sectiontext {}
+.c-sectiontext {
+    margin-bottom: 30px;
+    color: #6f6f6f;
+    text-align: center;
+}
