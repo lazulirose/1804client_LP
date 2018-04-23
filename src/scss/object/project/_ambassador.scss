@@ -1,0 +1,37 @@
+//tab
+section {
+    display: none;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    padding: 10px 5px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+input:checked+label {
+    border-bottom: 1px solid $main;
+    font-weight: bold;
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4 {
+    display: block;
+}
+
+.p-tab {
+    text-align: center;
+}
