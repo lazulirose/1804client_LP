@@ -1,13 +1,9 @@
 //tab
-section {
+.p-tab__content {
     display: none;
 }
 
-input {
-    display: none;
-}
-
-label {
+.p-tab__head {
     display: inline-block;
     padding: 10px 5px;
     margin-left: 20px;
@@ -15,20 +11,14 @@ label {
     text-align: center;
 }
 
-label:hover {
-    color: #888;
-    cursor: pointer;
-}
-
-input:checked+label {
+input:checked+.p-tab__head {
     border-bottom: 1px solid $main;
     font-weight: bold;
 }
 
-#tab1:checked~#content1,
-#tab2:checked~#content2,
-#tab3:checked~#content3,
-#tab4:checked~#content4 {
+#tab1:checked~.is-tabopen1,
+#tab2:checked~.is-tabopen2,
+#tab3:checked~.is-tabopen3 {
     display: block;
 }
 

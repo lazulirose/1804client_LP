@@ -62,6 +62,13 @@
     background-color: #fff;
 }
 
+.l-qa {
+    position: relative;
+    bottom: 153px;
+    padding: 24px 20px 30px;
+    background-color: #f4f4f4;
+}
+
 .l-container {
     @include mq-up(md) {}
     @include mq-up(lg) {}

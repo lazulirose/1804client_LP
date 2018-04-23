@@ -30,15 +30,6 @@
     text-align: center;
 }
 
-input {
-    display: none;
-}
-
-label {
-    display: block;
-    cursor: pointer;
-}
-
 .contains {
     transition: 0.2s;
     height: 0;
@@ -46,20 +37,74 @@ label {
     background: #fff;
 }
 
-input:checked+.contains {
+input:checked~.contains {
     height: auto;
 }
 
+//.c-card__arrow {
+//    display: block;
+//    position: relative;
+//    width: 20px;
+//    height: 20px;
+//    background-color: #fff;
+//}
+//
+//.c-card__arrow::after {
+//    display: block;
+//    position: relative;
+//    bottom: -18px;
+//    width: 18px;
+//    height: 18px;
+//    padding: 0 15px;
+//    margin: auto;
+//    background-color: #fff;
+//    background-image: url(../../../images/top.svg);
+//    background-position: center;
+//    background-repeat: no-repeat;
+//    content: "";
+//}
+//
+//input:checked~.c-card__arrow::after {
+//    display: block;
+//    position: relative;
+//    bottom: -18px;
+//    width: 18px;
+//    height: 18px;
+//    padding: 0 15px;
+//    margin: auto;
+//    background-color: #fff;
+//    background-image: url(../../../images/bottom.svg);
+//    background-position: center;
+//    background-repeat: no-repeat;
+//    content: "";
+//}
 .c-card__arrow {
-    display: block;
-    position: relative;
-    top: -4px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 0;
     width: 40px;
     padding: 0 13px;
     margin: auto;
-    vertical-align: middle;
     background-color: #fff;
-    svg {
-        margin-top: 3px;
-    }
+}
+
+.c-card__arrow::after {
+    display: block;
+    width: 14px;
+    height: 20px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMDAgMTAwMCI+PGcgZmlsbD0iIzAwMCI+PHBhdGggZD0iTTg4Ny4yLDIwOS4yTDQ5OS43LDU4OS4xTDExMi44LDIwOS43TDEwLDMxMC41bDQ4OS43LDQ4MC4zTDk5MCwzMTBMODg3LjIsMjA5LjJ6Ii8+PC9nPg0KPC9zdmc+DQo=");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+input:checked~.c-card__arrow::after {
+    display: block;
+    width: 14px;
+    height: 20px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5ODAgNTgxLjYiPjxnIGZpbGw9IiMwMDAiPjxwYXRoIGQ9Ik0xMDIuOCw1ODEuNiw0OTAuMywyMDEuNyw4NzcuMiw1ODEuMSw5ODAsNDgwLjMsNDkwLjMsMCwwLDQ4MC44WiIvPjwvZz48L3N2Zz4NCg==");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
 }

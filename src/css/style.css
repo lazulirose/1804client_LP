@@ -8,6 +8,7 @@
     Eric Meyer’s “Reset CSS” 2.0
 -------------------------------*****/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600");
 html,
 body,
 div,
@@ -223,6 +224,13 @@ body {
 
 video {
   display: block; }
+
+input {
+  display: none; }
+
+label {
+  display: block;
+  cursor: pointer; }
 
 /*****-------------------------------
 
@@ -511,6 +519,12 @@ video {
   overflow: hidden;
   background-color: #fff; }
 
+.l-qa {
+  position: relative;
+  bottom: 153px;
+  padding: 24px 20px 30px;
+  background-color: #f4f4f4; }
+
 /*****-------------------------------
 
     Component setting
@@ -580,8 +594,18 @@ video {
   z-index: 100;
   margin-bottom: 30px;
   color: #6f6f6f;
+  font-weight: bold;
   text-align: center;
   letter-spacing: .5px; }
+
+.c-sectiontitel--sub {
+  margin-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #6f6f6f;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 15px; }
 
 .c-card {
   position: relative; }
@@ -669,14 +693,26 @@ video {
   opacity: 0.3;
   cursor: pointer; }
 
-.c-slider__controls label:hover {
-  opacity: 0.8; }
-
-#slide1:checked ~ .c-slider__controls label:nth-child(2),
-#slide2:checked ~ .c-slider__controls label:nth-child(3),
-#slide3:checked ~ .c-slider__controls label:nth-child(4),
-#slide4:checked ~ .c-slider__controls label:nth-child(5),
-#slide5:checked ~ .c-slider__controls label:nth-child(1) {
+#slide-1:checked ~ .c-slider__controls label:nth-child(2),
+#slide-2:checked ~ .c-slider__controls label:nth-child(3),
+#slide-3:checked ~ .c-slider__controls label:nth-child(4),
+#slide-4:checked ~ .c-slider__controls label:nth-child(5),
+#slide-5:checked ~ .c-slider__controls label:nth-child(1),
+#slide1-1:checked ~ .c-slider__controls label:nth-child(2),
+#slide1-2:checked ~ .c-slider__controls label:nth-child(3),
+#slide1-3:checked ~ .c-slider__controls label:nth-child(4),
+#slide1-4:checked ~ .c-slider__controls label:nth-child(5),
+#slide1-5:checked ~ .c-slider__controls label:nth-child(1),
+#slide2-1:checked ~ .c-slider__controls label:nth-child(2),
+#slide2-2:checked ~ .c-slider__controls label:nth-child(3),
+#slide2-3:checked ~ .c-slider__controls label:nth-child(4),
+#slide2-4:checked ~ .c-slider__controls label:nth-child(5),
+#slide2-5:checked ~ .c-slider__controls label:nth-child(1),
+#slide3-1:checked ~ .c-slider__controls label:nth-child(2),
+#slide3-2:checked ~ .c-slider__controls label:nth-child(3),
+#slide3-3:checked ~ .c-slider__controls label:nth-child(4),
+#slide3-4:checked ~ .c-slider__controls label:nth-child(5),
+#slide3-5:checked ~ .c-slider__controls label:nth-child(1) {
   display: block;
   width: 28px;
   height: 28px;
@@ -686,11 +722,26 @@ video {
   background-repeat: no-repeat;
   float: right; }
 
-#slide1:checked ~ .c-slider__controls label:nth-child(5),
-#slide2:checked ~ .c-slider__controls label:nth-child(1),
-#slide3:checked ~ .c-slider__controls label:nth-child(2),
-#slide4:checked ~ .c-slider__controls label:nth-child(3),
-#slide5:checked ~ .c-slider__controls label:nth-child(4) {
+#slide-1:checked ~ .c-slider__controls label:nth-child(5),
+#slide-2:checked ~ .c-slider__controls label:nth-child(1),
+#slide-3:checked ~ .c-slider__controls label:nth-child(2),
+#slide-4:checked ~ .c-slider__controls label:nth-child(3),
+#slide-5:checked ~ .c-slider__controls label:nth-child(4),
+#slide1-1:checked ~ .c-slider__controls label:nth-child(5),
+#slide1-2:checked ~ .c-slider__controls label:nth-child(1),
+#slide1-3:checked ~ .c-slider__controls label:nth-child(2),
+#slide1-4:checked ~ .c-slider__controls label:nth-child(3),
+#slide1-5:checked ~ .c-slider__controls label:nth-child(4),
+#slide2-1:checked ~ .c-slider__controls label:nth-child(5),
+#slide2-2:checked ~ .c-slider__controls label:nth-child(1),
+#slide2-3:checked ~ .c-slider__controls label:nth-child(2),
+#slide2-4:checked ~ .c-slider__controls label:nth-child(3),
+#slide2-5:checked ~ .c-slider__controls label:nth-child(4),
+#slide3-1:checked ~ .c-slider__controls label:nth-child(5),
+#slide3-2:checked ~ .c-slider__controls label:nth-child(1),
+#slide3-3:checked ~ .c-slider__controls label:nth-child(2),
+#slide3-4:checked ~ .c-slider__controls label:nth-child(3),
+#slide3-5:checked ~ .c-slider__controls label:nth-child(4) {
   display: block;
   width: 28px;
   height: 28px;
@@ -700,19 +751,34 @@ video {
   background-position: center;
   background-repeat: no-repeat; }
 
-#slide1:checked ~ .c-slider__slides .slides__inner {
+#slide-1:checked ~ .c-slider__slides .slides__inner,
+#slide1-1:checked ~ .c-slider__slides .slides__inner,
+#slide2-1:checked ~ .c-slider__slides .slides__inner,
+#slide3-1:checked ~ .c-slider__slides .slides__inner {
   margin-left: 0; }
 
-#slide2:checked ~ .c-slider__slides .slides__inner {
+#slide-2:checked ~ .c-slider__slides .slides__inner,
+#slide1-2:checked ~ .c-slider__slides .slides__inner,
+#slide2-2:checked ~ .c-slider__slides .slides__inner,
+#slide3-2:checked ~ .c-slider__slides .slides__inner {
   margin-left: -100%; }
 
-#slide3:checked ~ .c-slider__slides .slides__inner {
+#slide-3:checked ~ .c-slider__slides .slides__inner,
+#slide1-3:checked ~ .c-slider__slides .slides__inner,
+#slide2-3:checked ~ .c-slider__slides .slides__inner,
+#slide3-3:checked ~ .c-slider__slides .slides__inner {
   margin-left: -200%; }
 
-#slide4:checked ~ .c-slider__slides .slides__inner {
+#slide-4:checked ~ .c-slider__slides .slides__inner,
+#slide1-4:checked ~ .c-slider__slides .slides__inner,
+#slide2-4:checked ~ .c-slider__slides .slides__inner,
+#slide3-4:checked ~ .c-slider__slides .slides__inner {
   margin-left: -300%; }
 
-#slide5:checked ~ .c-slider__slides .slides__inner {
+#slide-5:checked ~ .c-slider__slides .slides__inner,
+#slide1-5:checked ~ .c-slider__slides .slides__inner,
+#slide2-5:checked ~ .c-slider__slides .slides__inner,
+#slide3-5:checked ~ .c-slider__slides .slides__inner {
   margin-left: -400%; }
 
 .c-slider__slides .slides__inner {
@@ -968,13 +1034,6 @@ video {
   font-size: 19px;
   text-align: center; }
 
-input {
-  display: none; }
-
-label {
-  display: block;
-  cursor: pointer; }
-
 .contains {
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -982,47 +1041,131 @@ label {
   overflow: hidden;
   background: #fff; }
 
-input:checked + .contains {
+input:checked ~ .contains {
   height: auto; }
 
 .c-card__arrow {
-  display: block;
-  position: relative;
-  top: -4px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  left: 0;
   width: 40px;
   padding: 0 13px;
   margin: auto;
-  vertical-align: middle;
   background-color: #fff; }
-  .c-card__arrow svg {
-    margin-top: 3px; }
 
-section {
+.c-card__arrow::after {
+  display: block;
+  width: 14px;
+  height: 20px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMDAgMTAwMCI+PGcgZmlsbD0iIzAwMCI+PHBhdGggZD0iTTg4Ny4yLDIwOS4yTDQ5OS43LDU4OS4xTDExMi44LDIwOS43TDEwLDMxMC41bDQ4OS43LDQ4MC4zTDk5MCwzMTBMODg3LjIsMjA5LjJ6Ii8+PC9nPg0KPC9zdmc+DQo=");
+  background-position: center;
+  background-repeat: no-repeat;
+  content: ""; }
+
+input:checked ~ .c-card__arrow::after {
+  display: block;
+  width: 14px;
+  height: 20px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5ODAgNTgxLjYiPjxnIGZpbGw9IiMwMDAiPjxwYXRoIGQ9Ik0xMDIuOCw1ODEuNiw0OTAuMywyMDEuNyw4NzcuMiw1ODEuMSw5ODAsNDgwLjMsNDkwLjMsMCwwLDQ4MC44WiIvPjwvZz48L3N2Zz4NCg==");
+  background-position: center;
+  background-repeat: no-repeat;
+  content: ""; }
+
+.p-tab__content {
   display: none; }
 
-input {
-  display: none; }
-
-label {
+.p-tab__head {
   display: inline-block;
   padding: 10px 5px;
   margin-left: 20px;
   margin-bottom: 30px;
   text-align: center; }
 
-label:hover {
-  color: #888;
-  cursor: pointer; }
-
-input:checked + label {
+input:checked + .p-tab__head {
   border-bottom: 1px solid #1aa1e6;
   font-weight: bold; }
 
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
+#tab1:checked ~ .is-tabopen1,
+#tab2:checked ~ .is-tabopen2,
+#tab3:checked ~ .is-tabopen3 {
   display: block; }
 
 .p-tab {
   text-align: center; }
+
+.c-accordion {
+  margin-bottom: 10px; }
+
+.p-qa {
+  width: 100%;
+  padding: 0 20px; }
+
+.p-qa__container {
+  position: relative;
+  z-index: 1000;
+  display: block;
+  width: 300px;
+  margin: auto; }
+
+.p-qa__container--q {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 40px;
+  padding: 14px 50px 14px 16px;
+  cursor: pointer;
+  background-color: #fff; }
+  .p-qa__container--q span {
+    margin-right: 13px; }
+
+.p-qa__container--q::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMDAgMTAwMCI+PGcgZmlsbD0iIzZmNmY2ZiI+PHBhdGggZD0iTTg4Ny4yLDIwOS4yTDQ5OS43LDU4OS4xTDExMi44LDIwOS43TDEwLDMxMC41bDQ4OS43LDQ4MC4zTDk5MCwzMTBMODg3LjIsMjA5LjJ6Ii8+PC9nPg0KPC9zdmc+DQo=");
+  background-position: center;
+  background-repeat: no-repeat;
+  content: ""; }
+
+input:checked + .p-qa__container--q::after {
+  display: block;
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5ODAgNTgxLjYiPjxnIGZpbGw9IiM2ZjZmNmYiPjxwYXRoIGQ9Ik0xMDIuOCw1ODEuNiw0OTAuMywyMDEuNyw4NzcuMiw1ODEuMSw5ODAsNDgwLjMsNDkwLjMsMCwwLDQ4MC44WiIvPjwvZz48L3N2Zz4NCg==");
+  background-position: center;
+  background-repeat: no-repeat;
+  content: ""; }
+
+.p-qa__container--a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding: 0px 50px 0px 16px;
+  color: #1aa1e6;
+  font-weight: bold;
+  line-height: 1.4;
+  background-color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .p-qa__container--a p {
+    margin-left: 14px; }
+
+input:checked ~ .p-qa__container--a {
+  width: 100%;
+  height: auto;
+  padding: 14px 50px 14px 16px;
+  margin: auto; }
