@@ -53,6 +53,14 @@
     background-color: #f4f4f4;
 }
 
+.l-member {
+    position: relative;
+    bottom: 150px;
+    padding: 30px 0 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
 .l-container {
     @include mq-up(md) {}
     @include mq-up(lg) {}
