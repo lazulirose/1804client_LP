@@ -459,6 +459,9 @@ label {
 /*****-------------------------------
     Utility
 -------------------------------*****/
+.qa {
+  letter-spacing: 15px; }
+
 /*****-------------------------------
 
     Layout setting
@@ -524,6 +527,11 @@ label {
   bottom: 153px;
   padding: 24px 20px 30px;
   background-color: #f4f4f4; }
+
+.l-partner {
+  position: relative;
+  bottom: 146px;
+  padding: 24px 20px 30px; }
 
 /*****-------------------------------
 
@@ -600,12 +608,11 @@ label {
 
 .c-sectiontitel--sub {
   margin-bottom: 8px;
-  font-family: 'Montserrat', sans-serif;
   color: #6f6f6f;
   font-size: 40px;
   font-weight: 600;
   text-align: center;
-  letter-spacing: 15px; }
+  font-family: 'Montserrat', sans-serif; }
 
 .c-card {
   position: relative; }
@@ -1169,3 +1176,9 @@ input:checked ~ .p-qa__container--a {
   height: auto;
   padding: 14px 50px 14px 16px;
   margin: auto; }
+
+.l-partner {
+  text-align: center; }
+  .l-partner img {
+    width: 100%;
+    margin: auto; }
