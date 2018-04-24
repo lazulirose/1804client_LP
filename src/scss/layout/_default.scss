@@ -109,4 +109,8 @@
     @include mq-up(xl) {}
 }
 
-.l-footer {}
+.l-footer {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+}

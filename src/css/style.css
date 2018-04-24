@@ -569,6 +569,11 @@ label {
   padding: 40px 20px;
   background-color: #f4f4f4; }
 
+.l-footer {
+  width: 100%;
+  background-color: #fff;
+  text-align: center; }
+
 /*****-------------------------------
 
     Component setting
@@ -1344,3 +1349,7 @@ input:checked ~ .p-qa__container--a {
   text-align: center;
   line-height: 3;
   background-color: #1dcd00; }
+
+.p-copyright {
+  display: block;
+  padding: 20px; }
