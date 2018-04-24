@@ -55,3 +55,47 @@
     width: 90px;
     height: 44px;
 }
+
+.c-menu {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    @include font-family("en");
+}
+
+.c-menu__body {
+    display: block;
+    width: 230px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.menu__link {
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+    color: #000;
+    font-size: 10px;
+    letter-spacing: 1px;
+    span {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+}
+
+.menu__entry {
+    display: block;
+    width: 225px;
+    height: 45px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2.3;
+    background: #ffff00;
+    &:hover {
+        opacity: .8;
+    }
+}

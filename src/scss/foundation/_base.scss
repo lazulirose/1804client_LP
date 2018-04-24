@@ -17,9 +17,13 @@ body {
     }
 }
 
-main {}
+main {
+    display: block;
+}
 
-a {}
+a {
+    text-decoration: none;
+}
 
 video {
     display: block;
