@@ -538,6 +538,33 @@ label {
   bottom: 150px;
   background-color: #f4f4f4; }
 
+.l-wantedly {
+  position: relative;
+  overflow: hidden;
+  padding: 35px 20px 14px 20px;
+  width: 100%;
+  height: 400px; }
+  .l-wantedly::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 371px;
+    background-image: url("https://picsum.photos/335/371/?random");
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    content: "";
+    -webkit-filter: brightness(0.6);
+            filter: brightness(0.6);
+    height: 400px; }
+  .l-wantedly .c-sectiontitel,
+  .l-wantedly .c-sectiontext {
+    color: #fff; }
+
 /*****-------------------------------
 
     Component setting
@@ -894,6 +921,9 @@ label {
   padding-top: 8px;
   line-height: 1.3; }
 
+.p-bach--circle {
+  background-color: rgba(0, 0, 0, 0.4); }
+
 .p-loading {
   display: block;
   position: absolute;
@@ -1218,3 +1248,23 @@ input:checked ~ .p-qa__container--a {
 .p-messege--text {
   font-size: 12px;
   line-height: 1.6; }
+
+.p-wantedly__inner {
+  position: relative;
+  padding: 0 20px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold; }
+  .p-wantedly__inner p {
+    margin-bottom: 22px; }
+
+.p-bach--circle {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 8px;
+  border-radius: 15px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 2.5;
+  background-color: rgba(0, 0, 0, 0.6); }
