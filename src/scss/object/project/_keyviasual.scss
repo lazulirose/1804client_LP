@@ -2,7 +2,7 @@
     display: block;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(#2b81a0, .5);
 }
 
 .p-keyviasual__bg {
@@ -16,16 +16,33 @@
     z-index: -1000;
 }
 
+.p-keyviasual__tagline {
+    position: absolute;
+    bottom: 300px;
+    display: block;
+    width: 100%;
+    height: 25px;
+    padding: 0 20px;
+    svg {
+        display: block;
+        max-width: 320px;
+        margin: auto;
+        fill: #fff;
+    }
+}
+
 .p-keyviasual__text {
     position: absolute;
     left: 0;
-    bottom: 180px;
+    bottom: 150px;
     right: 0;
     margin: auto;
     color: #fff;
+    font-size: 10px;
     font-weight: bold;
     text-align: center;
     line-height: 2;
+    letter-spacing: 1px;
     -webkit-animation: text 7s;
     animation: text 7s;
 }
@@ -45,7 +62,7 @@
     @include font-family("en");
     color: #fff;
     text-align: center;
-    font-size: 9px;
+    font-size: 7px;
     letter-spacing: 3px;
 }
 
