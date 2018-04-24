@@ -1,16 +1,29 @@
 .p-loading {
     display: block;
-    position: absolute;
-    margin: auto;
-    color: #000;
-    animation: text-down 6.3s;
+    svg {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        max-width: 320px;
+        margin: auto;
+        animation: text-down 6.3s;
+    }
 }
 
 .p-loading::before {
-    position: absolute;
     display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
     width: 500px;
     height: 50px;
+    margin: auto;
     background-color: #fff;
     content: "";
     animation: text-in 5s ease-in-out .6s;
