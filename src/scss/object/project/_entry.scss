@@ -1,0 +1,82 @@
+.p-entryform {
+    padding: 30px 20px;
+    margin-bottom: 45px;
+    background-color: #fff;
+    input[type="submit"] {
+        display: block;
+        width: 100%;
+        height: 48px;
+        padding-top: 2px;
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 1px;
+        background-color: $main;
+    }
+}
+
+.p-entryform__text {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.element_wrap input,
+.element_wrap textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #eee;
+    border: none;
+    resize: none;
+}
+
+.element_wrap {
+    label {
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+    input[type="text"] {
+        height: 42px;
+    }
+    textarea {
+        height: 78px;
+    }
+}
+
+.c-bach--entry {
+    display: inline-block;
+    width: 25px;
+    height: 14px;
+    margin-left: 8px;
+    color: #fff;
+    font-size: 9px;
+    text-align: center;
+    line-height: 1.6;
+    vertical-align: top;
+    background-color: #0084bb;
+}
+
+.p-linelink {
+    padding: 15px 20px 20px;
+    background-color: #fff;
+}
+
+.p-linelink__text {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.p-linelink__button {
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    line-height: 3;
+    background-color: #1dcd00;
+}

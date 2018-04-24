@@ -98,6 +98,11 @@
     }
 }
 
+.l-entry {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
 .l-container {
     @include mq-up(md) {}
     @include mq-up(lg) {}

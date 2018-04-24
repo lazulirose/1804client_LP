@@ -583,7 +583,86 @@
             </div>
             <!-- /.l-wantedly -->
             <div class="l-entry">
-                <h2 class="c-sectiontitel--sub"></h2>
+                <h2 class="c-sectiontitel--sub">Entry</h2>
+                <div class="p-entryform">
+                    <p class="p-entryform__text">話を聞くだけでもOK！<br>お申し込みはこちらから</p>
+                    <!--                    <?php if( $page_flag === 1 ): ?>-->
+                    <!--
+<form method="post" action="">
+    <div class="element_wrap">
+        <label>氏名</label>
+        <p>
+            <?php echo $_POST['your_name']; ?>
+        </p>
+    </div>
+    <div class="element_wrap">
+        <label>メールアドレス</label>
+        <p>
+            <?php echo $_POST['email']; ?>
+        </p>
+    </div>
+    <div class="element_wrap">
+        <label>電話番号</label>
+        <p>
+            <?php echo $_POST['tel']; ?>
+        </p>
+    </div>
+    <div class="element_wrap">
+        <label>お問い合わせ内容</label>
+        <p>
+            <?php echo nl2br($_POST['contact']); ?>
+        </p>
+    </div>
+    <input type="submit" name="btn_back" value="戻る">
+    <input type="submit" name="btn_submit" value="送信">
+    <input type="hidden" name="your_name" value="<?php echo $_POST['your_name']; ?>">
+    <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
+    <input type="hidden" name="tels" value="<?php echo $_POST['tel']; ?>">
+    <input type="hidden" name="contact" value="<?php echo $_POST['contact']; ?>">
+</form>
+<?php elseif( $page_flag === 2 ): ?>
+
+<p>送信が完了しました。</p>
+<?php else: ?>
+<?php if( !empty($error) ): ?>
+<ul class="error_list">
+    <?php foreach( $error as $value ): ?>
+    <li>
+        <?php echo $value; ?>
+    </li>
+    <?php endforeach; ?>
+</ul>
+<?php endif; ?>
+-->
+                    <form method="post" action="">
+                        <div class="element_wrap">
+                            <label>お名前<span class="c-bach--entry">必須</span></label>
+                            <input type="text">
+                            <!--                            <input type="text" name="your_name" value="<?php if( !empty($_POST['your_name']) ){ echo $_POST['your_name']; } ?>">-->
+                        </div>
+                        <div class="element_wrap">
+                            <label>メールアドレス<span class="c-bach--entry">必須</span></label>
+                            <input type="text">
+                            <!--                            <input type="text" name="email" value="<?php if( !empty($_POST['email']) ){ echo $_POST['email']; } ?>">-->
+                        </div>
+                        <div class="element_wrap">
+                            <label>電話番号<span class="c-bach--entry">必須</span></label>
+                            <input type="text">
+                            <!--                                <input type="text" name="tel" value="<?php if( !empty($_POST['tel']) ){ echo $_POST['tel']; } ?>">-->
+                        </div>
+                        <div class="element_wrap">
+                            <label>お問い合わせ内容</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <!--                            <textarea name="contact"><?php if( !empty($_POST['contact']) ){ echo $_POST['contact']; } ?></textarea>-->
+                        </div>
+                        <input type="submit" name="btn_confirm" value="話を聞いてみる（確認画面へ）">
+                    </form>
+                    <!--                    <?php endif; ?>-->
+                </div>
+                <div class="p-linelink">
+                    <p class="p-linelink__text">もしくは</p>
+                    <a href="" class="p-linelink__button">LINE@でカンタン相談！</a>
+                </div>
             </div>
             <!-- /.l-entry -->
         </main>
