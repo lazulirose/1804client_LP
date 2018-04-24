@@ -4,19 +4,18 @@
 
 .c-nav__logo {
     position: absolute;
-    width: 120px;
-    margin-top: 42px;
-    margin-left: 25px;
-    .logo {}
+    width: 100px;
+    margin-top: 24px;
+    margin-left: 20px;
 }
 
 .c-nav__toggle {
     position: absolute;
-    top: 50px;
-    right: 30px;
+    top: 30px;
+    right: 20px;
     z-index: 2000;
-    width: 35px;
-    height: 3px;
+    width: 20px;
+    height: 2px;
     background-color: #fff;
     color: transparent;
     &::before,
@@ -24,27 +23,27 @@
         position: absolute;
         right: 0px;
         display: block;
-        width: 35px;
-        height: 3.5px;
+        width: 20px;
+        height: 2px;
         background-color: #fff;
         content: "";
     }
     &::before {
-        bottom: 13px;
+        bottom: 7px;
     }
     &::after {
-        top: 13px;
+        top: 7px;
     }
 }
 
 .menu__tag {
     position: absolute;
-    bottom: -5px;
-    right: 45px;
+    bottom: -4px;
+    right: 32px;
     color: #fff;
+    font-size: 10px;
     @include font-family("en");
-    font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
 }
 
 .menu__button {

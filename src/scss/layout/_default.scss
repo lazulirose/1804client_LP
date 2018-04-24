@@ -25,7 +25,9 @@
 .l-about {
     position: relative;
     z-index: 1000;
+    width: 374px;
     padding: 50px 20px 0 20px;
+    margin: auto;
     background-color: #fff;
 }
 
@@ -56,7 +58,6 @@
 .l-member,
 .l-ambassador {
     position: relative;
-    bottom: 150px;
     padding: 50px 0 20px;
     overflow: hidden;
     background-color: #fff;
@@ -64,21 +65,25 @@
 
 .l-qa {
     position: relative;
-    bottom: 153px;
     padding: 24px 20px 30px;
     background-color: #f4f4f4;
 }
 
 .l-partner {
     position: relative;
-    bottom: 146px;
     padding: 24px 20px 30px;
 }
 
 .l-messege {
     position: relative;
-    bottom: 150px;
     background-color: #f4f4f4;
+    .p-bg--blur {
+        height: 320px;
+        padding-top: 100px;
+    }
+    .p-bg--blur::before {
+        height: 320px;
+    }
 }
 
 .l-wantedly {
@@ -99,6 +104,7 @@
 }
 
 .l-entry {
+    position: relative;
     padding: 40px 20px;
     background-color: #f4f4f4;
 }
@@ -110,6 +116,7 @@
 }
 
 .l-footer {
+    position: relative;
     width: 100%;
     background-color: #fff;
     text-align: center;
