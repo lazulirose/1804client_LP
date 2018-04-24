@@ -1,6 +1,6 @@
 .p-schedule__cards {
     position: relative;
-    top: -150px;
+    top: -200px;
     padding: 0 20px;
     .c-card {
         margin-bottom: 30px;
@@ -41,43 +41,6 @@ input:checked~.contains {
     height: auto;
 }
 
-//.c-card__arrow {
-//    display: block;
-//    position: relative;
-//    width: 20px;
-//    height: 20px;
-//    background-color: #fff;
-//}
-//
-//.c-card__arrow::after {
-//    display: block;
-//    position: relative;
-//    bottom: -18px;
-//    width: 18px;
-//    height: 18px;
-//    padding: 0 15px;
-//    margin: auto;
-//    background-color: #fff;
-//    background-image: url(../../../images/top.svg);
-//    background-position: center;
-//    background-repeat: no-repeat;
-//    content: "";
-//}
-//
-//input:checked~.c-card__arrow::after {
-//    display: block;
-//    position: relative;
-//    bottom: -18px;
-//    width: 18px;
-//    height: 18px;
-//    padding: 0 15px;
-//    margin: auto;
-//    background-color: #fff;
-//    background-image: url(../../../images/bottom.svg);
-//    background-position: center;
-//    background-repeat: no-repeat;
-//    content: "";
-//}
 .c-card__arrow {
     display: inline-block;
     position: absolute;
