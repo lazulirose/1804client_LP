@@ -487,7 +487,7 @@ label {
 -------------------------------*****/
 .l-header {
   position: fixed;
-  z-index: 1000;
+  z-index: 100000;
   width: 100%; }
 
 .l-loading {
@@ -495,7 +495,7 @@ label {
   width: 100%;
   height: 100vh;
   position: fixed;
-  z-index: 100;
+  z-index: 100000000;
   overflow: hidden; }
 
 .l-keyviasual {
@@ -796,7 +796,6 @@ label {
 
 .c-slider__controls label {
   display: none;
-  opacity: 0.3;
   cursor: pointer; }
 
 #slide-1:checked ~ .c-slider__controls label:nth-child(2),
@@ -1093,12 +1092,14 @@ label {
 .p-about__viasual {
   display: block;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  width: 324px;
+  height: 200px; }
 
 .p-about__body::before {
   display: block;
   position: absolute;
-  top: 158px;
+  top: 161px;
   right: 20px;
   width: 324px;
   height: 200px;
@@ -1153,7 +1154,7 @@ label {
   padding: 0 20px;
   margin: 0 auto -160px; }
   .p-schedule__cards .c-card {
-    margin-bottom: 30px; }
+    margin-bottom: 50px; }
   .p-schedule__cards .c-bach {
     left: 0;
     right: 0;
@@ -1172,7 +1173,8 @@ label {
   padding-top: 40px;
   margin-bottom: 20px;
   font-size: 19px;
-  text-align: center; }
+  text-align: center;
+  font-weight: bold; }
 
 .contains {
   -webkit-transition: 0.2s;
@@ -1315,6 +1317,7 @@ input:checked ~ .p-qa__container--a {
   text-align: center; }
   .l-partner img {
     width: 100%;
+    max-width: 650px;
     margin: auto; }
 
 .p-messege {
