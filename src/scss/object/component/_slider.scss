@@ -4,6 +4,9 @@
     width: 100%;
     max-width: 220px;
     margin: 0 auto;
+    @include mq-up(md) {
+        max-width: 700px;
+    }
 }
 
 .c-slider__slides {
@@ -12,6 +15,9 @@
 
 .slides__inner {
     width: 500%;
+    @include mq-down(md) {
+        //width: 1500%;
+    }
 }
 
 .slides__inner::after {
@@ -21,9 +27,32 @@
     content: "";
 }
 
+.slides--pc {
+    display: none;
+    width: 100%;
+    @include mq-up(md) {
+        display: block;
+    }
+}
+
 .slides--sp {
-    width: 20%;
+    display: block;
+    width: 100%;
+    @include mq-up(md) {
+        display: none;
+    }
+}
+
+.slide {
     float: left;
+    @include mq-down(md) {
+        width: 20%;
+    }
+    &:not(:nth-child(3n)) {
+        @include mq-up(md) {
+            margin-right: 20px;
+        }
+    }
 }
 
 .overflow {

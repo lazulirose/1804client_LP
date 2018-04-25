@@ -764,6 +764,9 @@ label {
   width: 100%;
   max-width: 220px;
   margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .c-slider {
+      max-width: 700px; } }
 
 .c-slider__slides {
   position: relative; }
@@ -777,9 +780,28 @@ label {
   clear: both;
   content: ""; }
 
+.slides--pc {
+  display: none;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .slides--pc {
+      display: block; } }
+
 .slides--sp {
-  width: 20%;
+  display: block;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .slides--sp {
+      display: none; } }
+
+.slide {
   float: left; }
+  @media screen and (max-width: 767px) {
+    .slide {
+      width: 20%; } }
+  @media screen and (min-width: 768px) {
+    .slide:not(:nth-child(3n)) {
+      margin-right: 20px; } }
 
 .overflow {
   overflow: hidden; }
