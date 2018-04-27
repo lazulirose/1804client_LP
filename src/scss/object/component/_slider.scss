@@ -4,7 +4,8 @@
     width: 100%;
     max-width: 220px;
     margin: 0 auto;
-    @include mq-up(md) {
+    @include mq-up(lg) {
+        width: 100%;
         max-width: 700px;
     }
 }
@@ -15,7 +16,7 @@
 
 .slides__inner {
     width: 500%;
-    @include mq-down(md) {
+    @include mq-down(lg) {
         //width: 1500%;
     }
 }
@@ -30,7 +31,7 @@
 .slides--pc {
     display: none;
     width: 100%;
-    @include mq-up(md) {
+    @include mq-up(lg) {
         display: block;
     }
 }
@@ -38,18 +39,18 @@
 .slides--sp {
     display: block;
     width: 100%;
-    @include mq-up(md) {
+    @include mq-up(lg) {
         display: none;
     }
 }
 
 .slide {
     float: left;
-    @include mq-down(md) {
+    @include mq-down(lg) {
         width: 20%;
     }
     &:not(:nth-child(3n)) {
-        @include mq-up(md) {
+        @include mq-up(lg) {
             margin-right: 20px;
         }
     }

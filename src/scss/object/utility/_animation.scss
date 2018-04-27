@@ -3,11 +3,24 @@
 -------------------------------*****/
 
 #is-open {
-    display: none;
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-    background-color: rgba(#fff, .9);
+    @include mq-down(lg) {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        background-color: rgba(#fff, .9);
+    }
+}
+
+.hradder-scrolled {
+    background-color: #fff;
+    transition: .3s;
+    .logo .cls-1 {
+        fill: #000;
+    }
+    .menu__link {
+        color: #000 !important;
+    }
 }
 
 
@@ -65,6 +78,21 @@
     }
     100% {
         transform: translateX(450px);
+    }
+}
+
+@keyframes text-in-lg {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(170px);
+    }
+    50% {
+        transform: translateX(600px);
+    }
+    100% {
+        transform: translateX(600px);
     }
 }
 

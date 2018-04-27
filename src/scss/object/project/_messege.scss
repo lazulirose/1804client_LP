@@ -8,6 +8,11 @@
     margin: 0 auto -60px;
     background-color: #fff;
     box-shadow: 0px 0px 9px rgba(11, 11, 2, 0.13);
+    @include mq-up(md) {
+        width: 90%;
+        padding: 35px 50px;
+        max-width: 1090px;
+    }
 }
 
 .p-messege--title {
@@ -15,6 +20,12 @@
     font-size: 16px;
     font-weight: bold;
     text-align: center;
+    @include mq-up(md) {
+        margin-top: 25px;
+        margin-bottom: 50px;
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
 }
 
 .p-messege--title::after {
@@ -24,9 +35,18 @@
     margin: 15px auto 0;
     background-color: $main;
     content: "";
+    @include mq-up(md) {
+        width: 90px;
+        margin-top: 32px;
+    }
 }
 
 .p-messege--text {
     font-size: 12px;
     line-height: 1.6;
+    @include mq-up(md) {
+        padding: 0 50px;
+        font-size: 16px;
+        line-height: 2;
+    }
 }

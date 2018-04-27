@@ -10,6 +10,9 @@
         max-width: 320px;
         margin: auto;
         animation: text-down 6.3s;
+        @include mq-up(lg) {
+            max-width: 600px;
+        }
     }
 }
 
@@ -27,4 +30,9 @@
     background-color: #fff;
     content: "";
     animation: text-in 5s ease-in-out .6s;
+    @include mq-up(lg) {
+        width: 600px;
+        height: 80px;
+        animation: text-in-lg 5s ease-in-out .6s;
+    }
 }

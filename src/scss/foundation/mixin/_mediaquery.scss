@@ -1,7 +1,7 @@
-//*  common view point var
+//*  common view point var lg 992px -> lg 1090px
 //------------------------*/
 // min-width
-$breakpoint-up: ( 'sm': 'screen and (min-width: 481px)', 'md': 'screen and (min-width: 768px)', 'lg': 'screen and (min-width: 992px)', 'xl': 'screen and (min-width: 1200px)') !default;
+$breakpoint-up: ( 'sm': 'screen and (min-width: 481px)', 'md': 'screen and (min-width: 768px)', 'lg': 'screen and (min-width: 1090px)', 'xl': 'screen and (min-width: 1200px)') !default;
 // Definition of @mixin [@include mq-up()]
 @mixin mq-up($breakpoint: md) {
     @media #{map-get($breakpoint-up, $breakpoint)} {
@@ -10,7 +10,7 @@ $breakpoint-up: ( 'sm': 'screen and (min-width: 481px)', 'md': 'screen and (min-
 }
 
 // max-width
-$breakpoint-down: ( 'sm': 'screen and (max-width: 480px)', 'md': 'screen and (max-width: 767px)', 'lg': 'screen and (max-width: 991px)', 'xl': 'screen and (max-width: 1199px)', ) !default;
+$breakpoint-down: ( 'sm': 'screen and (max-width: 480px)', 'md': 'screen and (max-width: 767px)', 'lg': 'screen and (max-width: 1090px)', 'xl': 'screen and (max-width: 1199px)', ) !default;
 // Definition of @mixin [@include mq-down()]
 @mixin mq-down($breakpoint: md) {
     @media #{map-get($breakpoint-down, $breakpoint)} {
@@ -22,12 +22,14 @@ $breakpoint-down: ( 'sm': 'screen and (max-width: 480px)', 'md': 'screen and (ma
 /*****-------------------------------
     Mediaquery initial setting
 -------------------------------*****/
+
 .pc-only {
     display: none;
     @include mq-up(md) {
         display: block;
     }
 }
+
 .sp-only {
     @include mq-up(md) {
         display: none;

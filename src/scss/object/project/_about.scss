@@ -1,40 +1,81 @@
-.p-about__viasual {
-    display: block;
-    position: relative;
-    z-index: 2;
-    width: 324px;
-    height: 200px;
-}
-
-.p-about__body::before {
-    display: block;
-    position: absolute;
-    top: 161px;
-    right: 20px;
-    width: 324px;
-    height: 200px;
-    background-color: $main;
-    content: "";
-}
-
-.p-about__body {
-    padding: 25px 0;
-}
-
-.p-about__body__copy {
-    text-align: center;
-    span {
-        display: inline-block;
-        padding: 0 23px;
-        margin-bottom: 18px;
-        color: #fff;
-        font-weight: bold;
-        font-size: 17px;
-        line-height: 2.5;
-        background-color: $main;
+    .p-about {
+        @include mq-up(lg) {
+            display: flex;
+            margin-top: -130px;
+            justify-content: space-between;
+        }
     }
-}
 
-.p-about__body__text {
-    line-height: 1.8;
-}
+    .p-about__viasual {
+        display: block;
+        position: relative;
+        z-index: 2;
+        width: 324px;
+        height: 200px;
+        @include mq-up(lg) {
+            width: 546px;
+            height: 383px;
+        }
+    }
+
+    .p-about__body::before {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 324px;
+        height: 200px;
+        background-color: $main;
+        content: "";
+        @include mq-up(lg) {
+            top: 20px;
+            right: 0;
+            left: 15px;
+            width: 546px;
+            height: 383px;
+        }
+    }
+
+    .p-about__body {
+        padding: 25px 0;
+        @include mq-up(lg) {
+            padding: 134px 0 0px;
+            width: 486px;
+        }
+    }
+
+    .p-about__body__copy {
+        text-align: center;
+        span {
+            display: inline-block;
+            padding: 0 23px;
+            margin-bottom: 18px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 2.5;
+            background-color: $main;
+        }
+        @include mq-up(lg) {
+            text-align: left;
+            span {
+                height: 60px;
+                padding: 0 30px;
+                font-size: 30px;
+                line-height: 2;
+            }
+        }
+    }
+
+    .p-about__body__text {
+        line-height: 1.8;
+    }
+
+    .l-about .c-sectiontitel,
+    .l-about .c-sectiontext {
+        @include mq-up(lg) {
+            text-align: right;
+        }
+    }
+
+    .l-about .c-sectiontitel {}

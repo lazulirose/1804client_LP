@@ -1,5 +1,6 @@
 .c-card {
     position: relative;
+    z-index: 100;
 }
 
 .c-bach {
@@ -19,12 +20,19 @@
     max-width: 335px;
     max-height: 215px;
     filter: brightness(0.6);
+    @include mq-up(lg) {
+        max-width: auto;
+        max-height: 290px;
+    }
 }
 
 .c-card__body {
     width: 100%;
     max-width: 335px;
     background-color: #fff;
+    @include mq-up(lg) {
+        max-height: 290px;
+    }
 }
 
 .c-card__body--copy {
@@ -41,9 +49,17 @@
         padding-bottom: 4px;
         background: linear-gradient(transparent 90%, #ffff99 90%);
     }
+    @include mq-up(lg) {
+        top: -170px;
+        font-size: 32px;
+    }
 }
 
 .c-card__text {
     padding: 16px 20px;
-    line-height: 1.3;
+    line-height: 1.4;
+    @include mq-up(lg) {
+        height: auto;
+        margin-bottom: 34px;
+    }
 }

@@ -7,7 +7,7 @@
 }
 
 .p-keyviasual__bg {
-    position: absolute; //or absolute
+    position: absolute;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -23,12 +23,18 @@
     display: block;
     width: 100%;
     height: 25px;
+    animation: text 6.3s;
     img {
         display: block;
         max-width: 320px;
         margin: auto;
+        @include mq-up(lg) {
+            max-width: 870px;
+        }
     }
-    animation: text 6.3s;
+    @include mq-up(lg) {
+        bottom: 65%;
+    }
 }
 
 .p-keyviasual__text {
@@ -44,6 +50,10 @@
     line-height: 2.3;
     letter-spacing: 1px;
     animation: text 7s;
+    @include mq-up(lg) {
+        font-size: 20px;
+        line-height: 1.8;
+    }
 }
 
 .p-keyviasual__scroll {
@@ -63,6 +73,9 @@
     text-align: center;
     font-size: 7px;
     letter-spacing: 2px;
+    @include mq-up(lg) {
+        font-size: 12px;
+    }
 }
 
 .p-keyviasual__scroll__arrow {

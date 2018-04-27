@@ -2,8 +2,31 @@
     position: relative;
     max-width: 335px;
     margin: 0 auto 20px;
+    @include mq-up(lg) {
+        display: flex;
+        max-width: 1090px;
+        margin: 135px auto 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .c-card:nth-child(2) {
+            bottom: 80px;
+        }
+        .c-card:nth-child(5) {
+            bottom: 40px;
+        }
+        .c-card:nth-child(3) {
+            bottom: 160px;
+        }
+        .c-card:nth-child(6) {
+            bottom: 80px;
+        }
+    }
     .c-card {
         margin-bottom: 20px;
+        @include mq-up(lg) {
+            height: 480px;
+            margin-bottom: 40px;
+        }
     }
     .c-bach {
         top: 0;
@@ -12,9 +35,18 @@
         height: 12px;
         font-size: 6px;
         line-height: 2;
+        @include mq-up(lg) {
+            width: 122px;
+            height: 25px;
+            font-size: 11px;
+            line-height: 2.1;
+        }
     }
     .c-card__media {
         filter: brightness(0.6);
+        @include mq-up(lg) {
+            height: 286px;
+        }
     }
     .c-card__body {
         position: absolute;
@@ -22,5 +54,20 @@
         left: 0;
         bottom: 0;
         margin: auto;
+        @include mq-up(lg) {
+            height: 194px;
+        }
+    }
+    .c-card__text {
+        @include mq-up(lg) {
+            padding: 24px 30px;
+        }
+    }
+}
+
+.l-contents .c-sectiontitel,
+.l-contents .c-sectiontext {
+    @include mq-up(lg) {
+        text-align: left;
     }
 }

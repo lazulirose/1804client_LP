@@ -6,7 +6,6 @@
     position: fixed;
     z-index: 100000;
     width: 100%;
-    @include mq-up(md) {}
 }
 
 .l-loading {
@@ -29,6 +28,12 @@
     padding: 50px 20px 0 20px;
     margin: auto;
     background-color: #fff;
+    @include mq-up(lg) {
+        width: 100%;
+        max-width: 1090px;
+        margin: 0 auto 40px;
+        padding: 50px 0 0;
+    }
 }
 
 .l-contents {
@@ -47,6 +52,10 @@
     height: 200px;
     background-color: #fff;
     content: "";
+    @include mq-up(lg) {
+        top: -140px;
+        height: 350px;
+    }
 }
 
 .l-schedule {
@@ -76,13 +85,21 @@
 
 .l-messege {
     position: relative;
+    margin-bottom: 60px;
     background-color: #f4f4f4;
     .p-bg--blur {
         height: 320px;
         padding-top: 100px;
+        @include mq-up(lg) {
+            height: 430px;
+            padding-top: 130px;
+        }
     }
     .p-bg--blur::before {
         height: 320px;
+        @include mq-up(lg) {
+            height: 430px;
+        }
     }
 }
 
@@ -91,11 +108,17 @@
     overflow: hidden;
     padding: 35px 20px 14px 20px;
     width: 100%;
-    height: 400px;
+    height: 445px;
     &::before {
-        @include p-bg("https://picsum.photos/335/371/?random");
+        @include p-bg("https://picsum.photos/1000/400/?random");
+        height: 445px;
         filter: brightness(.6);
-        height: 400px;
+        @include mq-up(lg) {
+            height: 510px;
+        }
+    }
+    @include mq-up(lg) {
+        height: 510px;
     }
     .c-sectiontitel,
     .c-sectiontext {

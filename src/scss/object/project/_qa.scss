@@ -13,6 +13,10 @@
     display: block;
     width: 300px;
     margin: auto;
+    @include mq-up(md) {
+        width: 100%;
+        max-width: 1000px;
+    }
 }
 
 .p-qa__container--q {
@@ -25,6 +29,14 @@
     background-color: #fff;
     span {
         margin-right: 13px;
+        @include mq-up(lg) {
+            padding-left: 40px;
+            margin-right: 24px;
+        }
+    }
+    @include mq-up(lg) {
+        height: 80px;
+        padding: 35px 50px 35px 16px;
     }
 }
 
@@ -67,14 +79,18 @@ input:checked+.p-qa__container--q::after {
     line-height: 1.4;
     background-color: #fff;
     transition: 0.2s;
-    p {
-        margin-left: 14px;
+    span {
+        margin-right: 13px;
+        @include mq-up(lg) {
+            margin-right: 24px;
+            padding-left: 40px;
+        }
     }
 }
 
 input:checked~.p-qa__container--a {
     width: 100%;
     height: auto;
-    padding: 14px 50px 14px 16px;
+    padding: 35px 50px 35px 16px;
     margin: auto;
 }
