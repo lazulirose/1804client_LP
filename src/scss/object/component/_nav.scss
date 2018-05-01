@@ -87,12 +87,6 @@
         li:not(:last-child) .menu__link {
             color: #fff;
         }
-        .menu__link {
-            font-size: 11px;
-            span {
-                font-size: 15px;
-            }
-        }
     }
 }
 
@@ -103,6 +97,7 @@
     color: #000;
     font-size: 10px;
     letter-spacing: 1px;
+    font-weight: normal;
     span {
         display: block;
         margin-bottom: 8px;
@@ -112,6 +107,10 @@
     }
     @include mq-up(lg) {
         margin-bottom: 0;
+        font-size: 11px;
+        span {
+            font-size: 13px;
+        }
     }
 }
 

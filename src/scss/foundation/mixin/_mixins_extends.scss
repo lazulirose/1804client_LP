@@ -72,6 +72,9 @@
     background-position: center;
     filter: blur(4px);
     content: "";
+    @include mq-up(lg){
+        height: 410px;
+    }
 }
 
 //*  extend

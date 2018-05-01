@@ -3,7 +3,11 @@
     text-align: center;
     img {
         width: 100%;
-        max-width: 650px;
+        max-height: 375px;
         margin: auto;
+        @include mq-up(lg) {
+            width: 70%;
+            max-height: 150px;
+        }
     }
 }

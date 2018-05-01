@@ -5,8 +5,9 @@
     background-color: #fff;
     @include mq-up(lg) {
         width: 100%;
-        max-width: 1090px;
-        margin: 70px auto 45px;
+        max-width: 1020px;
+        padding: 30px 40px;
+        margin: 80px auto 45px;
     }
     input[type="submit"] {
         display: block;
@@ -23,8 +24,9 @@
             background-color: #0084bb;
         }
         @include mq-up(lg) {
-            max-width: 400px;
-            height: 65px;
+            max-width: 545px;
+            height: 90px;
+            font-size: 18px;
         }
     }
 }
@@ -35,7 +37,8 @@
     text-align: center;
     line-height: 1.4;
     @include mq-up(lg) {
-        margin: 50px 0;
+        margin: 50px 0 65px;
+        font-size: 18px;
     }
 }
 
@@ -47,18 +50,28 @@
     background-color: #eee;
     border: none;
     resize: none;
+    @include mq-up(lg) {
+        margin-bottom: 20px;
+    }
 }
 
 .element_wrap {
     label {
         margin-bottom: 15px;
         font-weight: 500;
+        @include mq-up(lg) {
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
     }
     input[type="text"] {
-        height: 42px;
+        height: 38px;
+        @include mq-up(lg) {
+            height: 65px;
+        }
     }
     textarea {
-        height: 78px;
+        height: 130px;
         @include mq-up(lg) {
             margin-bottom: 30px;
         }
@@ -69,13 +82,21 @@
     display: inline-block;
     width: 25px;
     height: 14px;
-    margin-left: 8px;
+    margin-left: 10px;
     color: #fff;
     font-size: 9px;
     text-align: center;
     line-height: 1.6;
     vertical-align: top;
     background-color: #0084bb;
+    @include mq-up(lg) {
+        width: 35px;
+        height: 18px;
+        margin-left: 8px;
+        font-size: 11px;
+        line-height: 1.8;
+        vertical-align: text-bottom;
+    }
 }
 
 .p-linelink {
@@ -83,9 +104,9 @@
     background-color: #fff;
     @include mq-up(lg) {
         width: 100%;
-        max-width: 1090px;
+        max-width: 1020px;
         margin: auto;
-        padding: 25px 20px 30px;
+        padding: 25px 30px;
     }
 }
 
@@ -113,9 +134,10 @@
         background-color: #1ba903;
     }
     @include mq-up(lg) {
-        max-width: 400px;
-        height: 55px;
-        line-height: 3.5;
+        max-width: 545px;
+        height: 75px;
+        font-size: 18px;
+        line-height: 4.3;
     }
 }
 
@@ -130,12 +152,21 @@ form::after,
     background-position: center right 40px;
     background-repeat: no-repeat;
     content: "";
+    @include mq-up(lg) {
+        width: 545px;
+    }
 }
 
 form::after {
     bottom: 40px;
+    @include mq-up(lg) {
+        bottom: 50px;
+    }
 }
 
 .p-linelink__button::after {
     bottom: 35px;
+    @include mq-up(lg) {
+        bottom: 45px;
+    }
 }

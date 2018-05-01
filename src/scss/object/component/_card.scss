@@ -17,7 +17,7 @@
 
 .c-card__media {
     width: 100%;
-    max-width: 335px;
+    max-width: 320px;
     max-height: 215px;
     filter: brightness(0.6);
     @include mq-up(lg) {
@@ -28,7 +28,7 @@
 
 .c-card__body {
     width: 100%;
-    max-width: 335px;
+    max-width: 320px;
     background-color: #fff;
     @include mq-up(lg) {
         max-height: 290px;

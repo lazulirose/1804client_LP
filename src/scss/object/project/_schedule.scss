@@ -3,19 +3,20 @@
     top: -200px;
     width: 374px;
     padding: 0 20px;
-    margin: 0 auto -160px;
+    margin: 0 auto -200px;
     @include mq-up(lg) {
-        top: -180px;
+        top: -65px;
         width: auto;
+        margin-bottom: -30px;
     }
     .c-card {
         margin-bottom: 50px;
         @include mq-up(lg) {
             display: flex;
             width: 100%;
-            max-width: 1090px;
-            max-height: 290px;
-            margin: 0 auto 50px;
+            max-width: 1020px;
+            max-height: 280px;
+            margin: 0 auto 30px;
             overflow: hidden;
         }
     }
@@ -32,7 +33,7 @@
             left: 44px;
             width: 85px;
             height: 28px;
-            margin: 15px 0;
+            margin: 19px 0 0;
             font-size: 17px;
             line-height: 1.7;
             letter-spacing: 1.5px;
@@ -41,7 +42,8 @@
     .c-card__media {
         height: 140px;
         @include mq-up(lg) {
-            height: 295px;
+            max-width: 250px;
+            height: auto;
         }
     }
     .c-card__body {
@@ -49,9 +51,8 @@
         top: -2px;
         @include mq-up(lg) {
             top: 0;
-            max-height: 294px;
-            max-width: 825px;
-            padding: 0 22px;
+            max-width: 770px;
+            padding: 0 20px;
         }
     }
 }
@@ -66,6 +67,7 @@
     @include mq-up(lg) {
         padding: 50px 50px 0 120px;
         margin-bottom: 14px;
+        font-size: 26px;
         text-align: left;
     }
 }

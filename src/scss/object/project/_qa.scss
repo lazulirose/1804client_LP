@@ -9,7 +9,7 @@
 
 .p-qa__container {
     position: relative;
-    z-index: 1000;
+    z-index: 960;
     display: block;
     width: 300px;
     margin: auto;
@@ -36,7 +36,7 @@
     }
     @include mq-up(lg) {
         height: 80px;
-        padding: 35px 50px 35px 16px;
+        padding: 33px 50px 33px 16px;
     }
 }
 
@@ -53,6 +53,9 @@
     background-position: center;
     background-repeat: no-repeat;
     content: "";
+    @include mq-up(lg) {
+        right: 25px;
+    }
 }
 
 input:checked+.p-qa__container--q::after {
@@ -66,6 +69,9 @@ input:checked+.p-qa__container--q::after {
     background-position: center;
     background-repeat: no-repeat;
     content: "";
+    @include mq-up(lg) {
+        right: 25px;
+    }
 }
 
 .p-qa__container--a {
