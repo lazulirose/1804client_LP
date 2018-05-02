@@ -10,18 +10,20 @@
         display: block;
         position: relative;
         z-index: 2;
-        width: 324px;
-        height: 200px;
+        width: 100%;
+        max-width: 342px;
         @include mq-up(lg) {
             width: 535px;
+            max-width: inherit;
             height: 383px;
             margin-top: 15px;
             margin-left: 30px;
+            padding-right: 0;
         }
     }
 
     .p-about__body {
-        padding: 25px 0;
+        padding: 20px 0;
         @include mq-up(lg) {
             padding: 185px 0 0px;
             width: 486px;
@@ -33,10 +35,10 @@
         span {
             display: inline-block;
             padding: 0 23px;
-            margin-bottom: 18px;
+            margin-bottom: 15px;
             color: #fff;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 2.5;
             background-color: $main;
         }
@@ -54,10 +56,11 @@
     }
 
     .p-about__body__text {
-        line-height: 1.8;
+        line-height: 1.6;
         @include mq-up(lg) {
             padding-right: 50px;
             margin-top: 15px;
+            line-height: 1.8;
         }
     }
 

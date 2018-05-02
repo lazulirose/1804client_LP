@@ -1,8 +1,10 @@
 .c-sectiontitel {
     position: relative;
     z-index: 300;
+    width: 100%;
     max-width: 1090px;
-    margin: 0 auto 8px;
+    margin: 0 auto 6px;
+    padding: 0 20px;
     @include font-family("en");
     font-weight: bold;
     color: #393939;
@@ -16,25 +18,30 @@
         letter-spacing: -3px;
     }
     &+.c-sectiontext {
-        margin-bottom: 45px;
+        margin-bottom: 30px;
         font-weight: bold;
         letter-spacing: 1px;
+        @include mq-up(lg) {
+            margin-bottom: 45px;
+        }
     }
 }
 
 h3.c-sectiontitel {
     position: relative;
     z-index: 300;
+    width: 100%;
     max-width: 1090px;
     margin: 0 auto 8px;
+    padding: 0 20px;
     @include font-family("en");
     font-weight: bold;
     color: #393939;
-    font-size: 50px;
+    font-size: 48px;
     text-align: center;
     letter-spacing: 1px;
     @include mq-up(lg) {
-        margin-bottom: 0;
+        margin-bottom: 14px;
         font-size: 90px;
         font-weight: 500;
         letter-spacing: 0px;
@@ -46,8 +53,10 @@ h3.c-sectiontitel {
     z-index: 300;
     max-width: 1090px;
     margin: 0 auto 8px;
+    font-size: 11px;
     color: #6f6f6f;
-    font-weight: 500;
+    @include font-family("en");
+    font-weight: normal;
     text-align: center;
     letter-spacing: .5px;
     @include mq-up(lg) {
@@ -63,6 +72,7 @@ h3.c-sectiontitel {
     font-weight: 600;
     text-align: center;
     font-family: "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
     @include mq-up(lg) {
         margin: 10px auto 20px;
         font-size: 55px;

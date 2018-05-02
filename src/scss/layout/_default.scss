@@ -24,8 +24,8 @@
 .l-about {
     position: relative;
     z-index: 1000;
-    width: 374px;
-    padding: 55px 40px 0 40px;
+    max-width: 380px;
+    padding: 40px 20px 0 20px;
     margin: auto;
     background-color: #fff;
     @include mq-up(lg) {
@@ -38,7 +38,7 @@
 
 .l-contents {
     position: relative;
-    padding: 55px 40px 25px;
+    padding: 55px 20px 20px;
     background-color: rgba($main, .25);
 }
 
@@ -90,14 +90,18 @@
 .l-qa {
     position: relative;
     width: 100%;
-    padding: 24px 20px 30px;
+    padding: 40px 40px 30px;
     margin: auto;
     background-color: #f4f4f4;
+    @include mq-up(lg) {
+        padding-top: 80px;
+    }
 }
 
 .l-partner {
+    // todo
     position: relative;
-    padding: 55px 80px 80px;
+    padding: 55px 0 80px;
 }
 
 .l-messege {
@@ -105,7 +109,7 @@
     margin-bottom: 70px;
     background-color: #f4f4f4;
     .p-bg--blur {
-        height: 320px;
+        height: 310px;
         padding-top: 100px;
         @include mq-up(lg) {
             height: 600px;
@@ -113,7 +117,6 @@
         }
     }
     .p-bg--blur::before {
-        height: 320px;
         @include p-bg("../../../images/messege-bg.png");
         filter: brightness(80%);
         @include mq-up(lg) {
@@ -125,16 +128,12 @@
 .l-wantedly {
     position: relative;
     overflow: hidden;
-    padding: 35px 20px 14px 20px;
+    padding: 35px 20px 14px 40px;
     width: 100%;
-    height: 445px;
     &::before {
         @include p-bg("../../images/wantedly-bg.png");
-        height: 445px;
+        height: 510px !important;
         filter: brightness(.6);
-        @include mq-up(lg) {
-            height: 510px;
-        }
     }
     @include mq-up(lg) {
         height: 510px;

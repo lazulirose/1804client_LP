@@ -1,16 +1,14 @@
 .p-schedule__cards {
     position: relative;
-    top: -200px;
-    width: 374px;
-    padding: 0 20px;
-    margin: 0 auto -200px;
+    top: -80px;
+    margin: 0 20px -80px;
     @include mq-up(lg) {
         top: -65px;
         width: auto;
         margin-bottom: -30px;
     }
     .c-card {
-        margin-bottom: 50px;
+        margin: 0 auto 50px;
         @include mq-up(lg) {
             display: flex;
             width: 100%;
@@ -40,15 +38,21 @@
         }
     }
     .c-card__media {
+        width: 100%;
         height: 140px;
+        object-fit: cover;
+        object-position: 0 -30px;
+        transform: scale(1, .9);
         @include mq-up(lg) {
             max-width: 250px;
             height: auto;
+            object-position: center;
+            transform: none;
         }
     }
     .c-card__body {
         position: relative;
-        top: -2px;
+        top: -12px;
         @include mq-up(lg) {
             top: 0;
             max-width: 770px;
@@ -57,10 +61,26 @@
     }
 }
 
+.p-schedule__cards::after {
+    @include mq-up(lg) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 7px;
+        height: 1500px;
+        margin: auto;
+        background-color: #fff;
+        content: "";
+    }
+}
+
 .c-card__title {
     padding: 40px 22px 0;
     margin-bottom: 20px;
-    font-size: 19px;
+    font-size: 20px;
     text-align: center;
     font-weight: bold;
     line-height: 1.4;

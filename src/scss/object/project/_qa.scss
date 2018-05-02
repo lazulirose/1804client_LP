@@ -12,6 +12,7 @@
     z-index: 960;
     display: block;
     width: 300px;
+    padding-top: 30px;
     margin: auto;
     @include mq-up(md) {
         width: 100%;
@@ -27,6 +28,7 @@
     padding: 14px 50px 14px 16px;
     cursor: pointer;
     background-color: #fff;
+    font-size: 12px;
     span {
         margin-right: 13px;
         @include mq-up(lg) {
@@ -37,6 +39,7 @@
     @include mq-up(lg) {
         height: 80px;
         padding: 33px 50px 33px 16px;
+        font-size: 16px;
     }
 }
 
@@ -46,14 +49,16 @@
     top: 0;
     right: 15px;
     bottom: 0;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin: auto;
     background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMDAgMTAwMCI+PGcgZmlsbD0iIzZmNmY2ZiI+PHBhdGggZD0iTTg4Ny4yLDIwOS4yTDQ5OS43LDU4OS4xTDExMi44LDIwOS43TDEwLDMxMC41bDQ4OS43LDQ4MC4zTDk5MCwzMTBMODg3LjIsMjA5LjJ6Ii8+PC9nPg0KPC9zdmc+DQo=");
     background-position: center;
     background-repeat: no-repeat;
     content: "";
     @include mq-up(lg) {
+        width: 15px;
+        height: 15px;
         right: 25px;
     }
 }
@@ -63,13 +68,15 @@ input:checked+.p-qa__container--q::after {
     position: absolute;
     right: 15px;
     bottom: 0;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5ODAgNTgxLjYiPjxnIGZpbGw9IiM2ZjZmNmYiPjxwYXRoIGQ9Ik0xMDIuOCw1ODEuNiw0OTAuMywyMDEuNyw4NzcuMiw1ODEuMSw5ODAsNDgwLjMsNDkwLjMsMCwwLDQ4MC44WiIvPjwvZz48L3N2Zz4NCg==");
     background-position: center;
     background-repeat: no-repeat;
     content: "";
     @include mq-up(lg) {
+        width: 20px;
+        height: 20px;
         right: 25px;
     }
 }
@@ -84,12 +91,14 @@ input:checked+.p-qa__container--q::after {
     font-weight: bold;
     line-height: 1.4;
     background-color: #fff;
+    font-size: 12px;
     transition: 0.2s;
     span {
         margin-right: 13px;
         @include mq-up(lg) {
             margin-right: 24px;
             padding-left: 40px;
+            font-size: 16px;
         }
     }
 }
