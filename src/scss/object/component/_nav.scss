@@ -3,6 +3,7 @@
     @include mq-up(lg) {
         width: 1090px;
         margin: auto;
+        padding-top: 20px;
     }
 }
 
@@ -12,7 +13,7 @@
     margin-top: 24px;
     margin-left: 20px;
     @include mq-up(lg) {
-        margin-top: 32px;
+        width: 180px;
     }
 }
 
@@ -128,11 +129,10 @@
         opacity: .3;
     }
     @include mq-up(lg) {
-        width: 186px;
+        width: 160px;
         height: 40px;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 2.5;
-        letter-spacing: 1px;
     }
 }
 

@@ -115,6 +115,7 @@
     .p-bg--blur::before {
         height: 320px;
         @include p-bg("../../../images/messege-bg.png");
+        filter: brightness(80%);
         @include mq-up(lg) {
             height: 600px;
         }

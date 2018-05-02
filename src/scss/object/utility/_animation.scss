@@ -21,6 +21,11 @@
     .menu__link {
         color: #000 !important;
     }
+    .c-nav {
+        @include mq-up(lg) {
+            padding-top: 0;
+        }
+    }
 }
 
 

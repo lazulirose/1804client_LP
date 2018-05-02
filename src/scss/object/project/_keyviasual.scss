@@ -1,20 +1,29 @@
 .p-keyviasual {
-    display: block;
+    //display: block;
     width: 100%;
-    height: 100%;
     height: 100vh;
     background-color: rgba(#2b81a0, .5);
+    overflow: hidden;
 }
 
 .p-keyviasual__bg {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    position: relative;
+    //TODO change video
+    //    position: absolute;
+    //    right: 0;
+    //    bottom: 0;
+    //min-width: 100%;
+    //min-height: 100%;
+    //width: auto;
+    //height: auto;
+    //    max-height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     z-index: -1000;
+    background-image: url(./../../../../images/top-pc.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .p-keyviasual__tagline {
@@ -33,7 +42,7 @@
         }
     }
     @include mq-up(lg) {
-        bottom: 65%;
+        bottom: 70%;
     }
 }
 
@@ -51,8 +60,10 @@
     letter-spacing: 1px;
     animation: text 7s;
     @include mq-up(lg) {
+        bottom: 25%;
         font-size: 20px;
         line-height: 1.8;
+        letter-spacing: .5px;
     }
 }
 

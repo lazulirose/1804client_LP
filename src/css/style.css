@@ -263,6 +263,9 @@ label {
     fill: #000; }
   .hradder-scrolled .menu__link {
     color: #000 !important; }
+  @media screen and (min-width: 1090px) {
+    .hradder-scrolled .c-nav {
+      padding-top: 0; } }
 
 /*****-------------------------------
     menu-bar01 is before
@@ -646,7 +649,9 @@ label {
     background-position: center;
     -webkit-filter: blur(4px);
             filter: blur(4px);
-    content: ""; }
+    content: "";
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%); }
     @media screen and (min-width: 1090px) {
       .l-messege .p-bg--blur::before {
         height: 410px; } }
@@ -711,7 +716,8 @@ label {
   @media screen and (min-width: 1090px) {
     .c-nav {
       width: 1090px;
-      margin: auto; } }
+      margin: auto;
+      padding-top: 20px; } }
 
 .c-nav__logo {
   position: absolute;
@@ -720,7 +726,7 @@ label {
   margin-left: 20px; }
   @media screen and (min-width: 1090px) {
     .c-nav__logo {
-      margin-top: 32px; } }
+      width: 180px; } }
 
 .c-nav__toggle {
   position: absolute;
@@ -825,11 +831,10 @@ label {
     opacity: .3; }
   @media screen and (min-width: 1090px) {
     .menu__entry {
-      width: 186px;
+      width: 160px;
       height: 40px;
-      font-size: 16px;
-      line-height: 2.5;
-      letter-spacing: 1px; } }
+      font-size: 15px;
+      line-height: 2.5; } }
 
 .menu__entry::after {
   display: block;
@@ -936,7 +941,9 @@ h3.c-sectiontitel {
   @media screen and (min-width: 1090px) {
     .c-card__media {
       max-width: auto;
-      max-height: 290px; } }
+      max-height: 290px;
+      -webkit-filter: none;
+              filter: none; } }
 
 .c-card__body {
   width: 100%;
@@ -1346,21 +1353,20 @@ h3.c-sectiontitel {
               animation: text-in-lg 5s ease-in-out .6s; } }
 
 .p-keyviasual {
-  display: block;
   width: 100%;
-  height: 100%;
   height: 100vh;
-  background-color: rgba(43, 129, 160, 0.5); }
+  background-color: rgba(43, 129, 160, 0.5);
+  overflow: hidden; }
 
 .p-keyviasual__bg {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1000; }
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1000;
+  background-image: url(./../../../../images/top-pc.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .p-keyviasual__tagline {
   position: absolute;
@@ -1379,7 +1385,7 @@ h3.c-sectiontitel {
         max-width: 870px; } }
   @media screen and (min-width: 1090px) {
     .p-keyviasual__tagline {
-      bottom: 65%; } }
+      bottom: 70%; } }
 
 .p-keyviasual__text {
   position: absolute;
@@ -1397,8 +1403,10 @@ h3.c-sectiontitel {
           animation: text 7s; }
   @media screen and (min-width: 1090px) {
     .p-keyviasual__text {
+      bottom: 25%;
       font-size: 20px;
-      line-height: 1.8; } }
+      line-height: 1.8;
+      letter-spacing: .5px; } }
 
 .p-keyviasual__scroll {
   position: absolute;

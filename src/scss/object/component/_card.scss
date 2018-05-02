@@ -23,6 +23,7 @@
     @include mq-up(lg) {
         max-width: auto;
         max-height: 290px;
+        filter: none;
     }
 }
 
