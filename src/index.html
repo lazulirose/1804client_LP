@@ -1365,8 +1365,8 @@
         function jumpToLinks() {
             const x = document.getElementById("is-open");
             const y = document.getElementById("is-menuclose");
-            const moble = document.defaultView.getComputedStyle(y, null).display;
-            if (moble === "block") {
+            const viewToggle = document.defaultView.getComputedStyle(y, null).display;
+            if (viewToggle === "block") {
                 x.style.display = "none";
                 y.classList.remove("close-anime");
                 y.classList.add("open-anime");
