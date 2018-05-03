@@ -1005,7 +1005,7 @@
                                             </div>
                                             <div class="slides--pc">
                                                 <div class="slide">
-                                                    <img class="p-slides__media" src="./images/slider.png" alt="">
+                                                    <img class="p-slides__media" src="./images/slider-1.png" alt="">
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
                                                         <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
@@ -1013,7 +1013,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="slide">
-                                                    <img class="p-slides__media" src="./images/slider.png" alt="">
+                                                    <img class="p-slides__media" src="./images/slider-2.png" alt="">
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
                                                         <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
@@ -1021,7 +1021,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="slide">
-                                                    <img class="p-slides__media" src="./images/slider.png" alt="">
+                                                    <img class="p-slides__media" src="./images/slider-3.png" alt="">
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
                                                         <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
@@ -1340,6 +1340,12 @@
                 }
             }
         }
+        const loading = document.getElementById("loader-text");
+        const bg = document.getElementById("loader");
+        loading.addEventListener("animationend", function() {
+            fadeOut(bg, 00);
+            document.body.style.position = "relative";
+        });
 
         function navigationTrigger() {
             const x = document.getElementById("is-open");
@@ -1354,11 +1360,6 @@
                 y.classList.add("close-anime");
             }
         }
-        const loading = document.getElementById("loader-text");
-        const bg = document.getElementById("loader");
-        loading.addEventListener("animationend", function() {
-            fadeOut(bg, 00);
-        });
 
         function fadeOut(node, duration) {
             node.style.opacity = 1;

@@ -6,7 +6,13 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-y: scroll;
+}
+
 body {
+    position: fixed;
+    overflow-x: hidden;
     @include font-family("yugothic");
     font-weight: 500;
     overflow-x: hidden;

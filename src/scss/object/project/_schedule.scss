@@ -62,19 +62,17 @@
 }
 
 .p-schedule__cards::after {
-    @include mq-up(lg) {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        width: 7px;
-        height: 1500px;
-        margin: auto;
-        background-color: #fff;
-        content: "";
-    }
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 7px;
+    height: 1500px;
+    margin: auto;
+    background-color: #fff;
+    content: "";
 }
 
 .c-card__title {

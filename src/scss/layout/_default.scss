@@ -135,6 +135,9 @@
         height: 510px !important;
         filter: brightness(.6);
     }
+    @include mq-up(md) {
+        height: 450px;
+    }
     @include mq-up(lg) {
         height: 510px;
     }

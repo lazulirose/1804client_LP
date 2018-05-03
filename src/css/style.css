@@ -212,7 +212,12 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+html {
+  overflow-y: scroll; }
+
 body {
+  position: fixed;
+  overflow-x: hidden;
   font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
   font-weight: 500;
   overflow-x: hidden;
@@ -689,6 +694,9 @@ label {
     @media screen and (min-width: 1090px) {
       .l-wantedly::before {
         height: 410px; } }
+  @media screen and (min-width: 768px) {
+    .l-wantedly {
+      height: 450px; } }
   @media screen and (min-width: 1090px) {
     .l-wantedly {
       height: 510px; } }
@@ -1324,7 +1332,9 @@ h3.c-sectiontitel {
   background-color: rgba(0, 0, 0, 0.4); }
 
 .p-loading {
-  display: block; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .p-loading svg {
     display: block;
     position: absolute;
@@ -1580,8 +1590,6 @@ h3.c-sectiontitel {
     @media screen and (min-width: 1090px) {
       .p-contents__cards .c-card__media {
         height: 270px;
-        -webkit-filter: none;
-                filter: none;
         -o-object-position: center;
            object-position: center;
         -webkit-transform: none;
@@ -1670,19 +1678,18 @@ h3.c-sectiontitel {
         max-width: 770px;
         padding: 0 20px; } }
 
-@media screen and (min-width: 1090px) {
-  .p-schedule__cards::after {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 7px;
-    height: 1500px;
-    margin: auto;
-    background-color: #fff;
-    content: ""; } }
+.p-schedule__cards::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 7px;
+  height: 1500px;
+  margin: auto;
+  background-color: #fff;
+  content: ""; }
 
 .c-card__title {
   padding: 40px 22px 0;
@@ -1827,8 +1834,8 @@ input:checked + .p-tab__head {
   content: ""; }
   @media screen and (min-width: 1090px) {
     .p-qa__container--q::after {
-      width: 15px;
-      height: 15px;
+      width: 20px;
+      height: 20px;
       right: 25px; } }
 
 input:checked + .p-qa__container--q::after {
@@ -1854,8 +1861,8 @@ input:checked + .p-qa__container--q::after {
   display: flex;
   position: relative;
   height: 0;
-  overflow: hidden;
   padding: 0px 50px 0px 16px;
+  overflow: hidden;
   color: #1aa1e6;
   font-weight: bold;
   line-height: 1.4;
@@ -1868,14 +1875,21 @@ input:checked + .p-qa__container--q::after {
     @media screen and (min-width: 1090px) {
       .p-qa__container--a span {
         margin-right: 24px;
-        padding-left: 40px;
-        font-size: 16px; } }
+        padding-left: 40px; } }
+  @media screen and (min-width: 1090px) {
+    .p-qa__container--a {
+      padding: 0px 50px 0px 16px;
+      font-size: 16px; } }
 
 input:checked ~ .p-qa__container--a {
   width: 100%;
   height: auto;
-  padding: 35px 50px 35px 16px;
+  padding: 14px 50px 14px 16px;
   margin: auto; }
+  @media screen and (min-width: 1090px) {
+    input:checked ~ .p-qa__container--a {
+      padding: 33px 50px 33px 16px;
+      font-size: 16px; } }
 
 .l-partner {
   position: relative;
@@ -1985,11 +1999,12 @@ input:checked ~ .p-qa__container--a {
   background-color: rgba(0, 0, 0, 0.6); }
   @media screen and (min-width: 768px) {
     .p-bach--circle {
-      width: 48%;
-      margin-bottom: 35px; } }
+      width: 48%; } }
   @media screen and (min-width: 1090px) {
     .p-bach--circle {
-      width: 336px;
+      min-width: 30%;
+      width: auto;
+      max-width: 336px;
       height: 60px;
       margin-bottom: 35px;
       margin-left: 40px;

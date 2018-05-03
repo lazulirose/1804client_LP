@@ -57,8 +57,8 @@
     background-repeat: no-repeat;
     content: "";
     @include mq-up(lg) {
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
         right: 25px;
     }
 }
@@ -85,8 +85,8 @@ input:checked+.p-qa__container--q::after {
     display: flex;
     position: relative;
     height: 0;
-    overflow: hidden;
     padding: 0px 50px 0px 16px;
+    overflow: hidden;
     color: $main;
     font-weight: bold;
     line-height: 1.4;
@@ -98,14 +98,21 @@ input:checked+.p-qa__container--q::after {
         @include mq-up(lg) {
             margin-right: 24px;
             padding-left: 40px;
-            font-size: 16px;
         }
+    }
+    @include mq-up(lg) {
+        padding: 0px 50px 0px 16px;
+        font-size: 16px;
     }
 }
 
 input:checked~.p-qa__container--a {
     width: 100%;
     height: auto;
-    padding: 35px 50px 35px 16px;
+    padding: 14px 50px 14px 16px;
     margin: auto;
+    @include mq-up(lg) {
+        padding: 33px 50px 33px 16px;
+        font-size: 16px;
+    }
 }
