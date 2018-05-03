@@ -18,7 +18,7 @@
     .logo .cls-1 {
         fill: #000;
     }
-    .menu__link {
+    li:not(:last-child) .menu__link {
         color: #000 !important;
     }
     .c-nav {
@@ -26,6 +26,15 @@
             padding-top: 0;
         }
     }
+    // Mobile header
+    //    .menu__tag {
+    //        color: #000 !important;
+    //    }
+    //    .c-nav__toggle,
+    //    .c-nav__toggle::before,
+    //    .c-nav__toggle::after {
+    //        background-color: #000 !important;
+    //    }
 }
 
 

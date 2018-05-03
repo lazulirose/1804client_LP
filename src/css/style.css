@@ -266,7 +266,7 @@ label {
   transition: .3s; }
   .hradder-scrolled .logo .cls-1 {
     fill: #000; }
-  .hradder-scrolled .menu__link {
+  .hradder-scrolled li:not(:last-child) .menu__link {
     color: #000 !important; }
   @media screen and (min-width: 1090px) {
     .hradder-scrolled .c-nav {
