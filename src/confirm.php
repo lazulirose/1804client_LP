@@ -83,15 +83,15 @@ EOM;
                     <div class="c-menu" id="is-open">
                         <ul class="c-menu__body">
                             <li>
-                                <a class="menu__link" href="./index.php/#about"><span class="">ABOUT</span>KOKOKARAについて</a>
+                                <a class="menu__link" href="./#about"><span class="">ABOUT</span>KOKOKARAについて</a>
                             </li>
                             <li>
-                                <a class="menu__link" href="./index.php/#contents"><span class="">CONTENTS</span>KOKOKARでできること</a>
+                                <a class="menu__link" href="./#contents"><span class="">CONTENTS</span>KOKOKARでできること</a>
                             </li>
                             <li>
-                                <a class="menu__link" href="./index.php/#schedule"><span class="">SCHEDULE</span>スケジュール</a>
+                                <a class="menu__link" href="./#schedule"><span class="">SCHEDULE</span>スケジュール</a>
                             </li>
-                            <li><a class="menu__entry" href="./index.php/#entry">ENTRY</a></li>
+                            <li><a class="menu__entry" href="./#entry">ENTRY</a></li>
                         </ul>
                     </div>
                 </nav>
