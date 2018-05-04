@@ -1294,6 +1294,17 @@
         loading.addEventListener("animationend", function() {
             fadeOut(bg, 00);
             document.getElementById("index").style.position = "relative";
+            if (document.location.hash == "#about") {
+                window.location.href = "#about"
+            } else if (document.location.hash == "#contents") {
+                window.location.href = "#contents"
+            } else if (document.location.hash == "#schedule") {
+                window.location.href = "#schedule"
+            } else if (document.location.hash == "#entry") {
+                window.location.href = "#entry"
+            } else {
+                return;
+            }
         });
 
         function navigationTrigger() {
