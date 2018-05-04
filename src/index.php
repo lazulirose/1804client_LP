@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <title></title>
+    <title>KOKOKARA</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="" property="og:title">
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div class="l-container">
+    <div id="index">
         <header class="l-header" id="is-scrolled">
             <nav class="c-nav">
                 <h1 class="c-nav__logo">
@@ -44,7 +44,8 @@
             </nav>
         </header>
         <!-- /.l-header -->
-        <main class="">
+        <main>
+
             <div id="loader" class="l-loading">
                 <div id="loader-text" class="p-loading tagline"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 607.1 79.5" style="enable-background:new 0 0 607.1 79.5;" xml:space="preserve"><g><g><path d="M407.7,40.6c-0.3-1.1-0.8-1.4-1.2-1.4c-0.7,0-0.5-0.2-2.1,0.1c0,0,0-0.8,0-1.3c-0.1-2.4-0.1-2.4-0.2-6.2
 			c0-5.7-1.7-8-7.3-6.9c-8.1,1.6-7.2,0.9-21,6.3c-0.5,0.2-1,0.1-1.5-0.4c-0.6-0.5-0.3-1.4,0.6-2.5c4.1-5,6.3-8.9,10.9-12.2
@@ -1240,78 +1241,25 @@
                 <h2 class="c-sectiontitel--sub is-show">Entry</h2>
                 <div class="p-entryform">
                     <p class="p-entryform__text is-show">話を聞くだけでもOK！<br class="sp-only">お申し込みはこちらから</p>
-                    <!--                    <?php if( $page_flag === 1 ): ?>-->
-                    <!--
-<form method="post" action="">
-    <div class="element_wrap">
-        <label>氏名</label>
-        <p>
-            <?php echo $_POST['your_name']; ?>
-        </p>
-    </div>
-    <div class="element_wrap">
-        <label>メールアドレス</label>
-        <p>
-            <?php echo $_POST['email']; ?>
-        </p>
-    </div>
-    <div class="element_wrap">
-        <label>電話番号</label>
-        <p>
-            <?php echo $_POST['tel']; ?>
-        </p>
-    </div>
-    <div class="element_wrap">
-        <label>お問い合わせ内容</label>
-        <p>
-            <?php echo nl2br($_POST['contact']); ?>
-        </p>
-    </div>
-    <input type="submit" name="btn_back" value="戻る">
-    <input type="submit" name="btn_submit" value="送信">
-    <input type="hidden" name="your_name" value="<?php echo $_POST['your_name']; ?>">
-    <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
-    <input type="hidden" name="tels" value="<?php echo $_POST['tel']; ?>">
-    <input type="hidden" name="contact" value="<?php echo $_POST['contact']; ?>">
-</form>
-<?php elseif( $page_flag === 2 ): ?>
-
-<p>送信が完了しました。</p>
-<?php else: ?>
-<?php if( !empty($error) ): ?>
-<ul class="error_list">
-    <?php foreach( $error as $value ): ?>
-    <li>
-        <?php echo $value; ?>
-    </li>
-    <?php endforeach; ?>
-</ul>
-<?php endif; ?>
--->
-                    <form method="post" action="">
+                    <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
                         <div class="element_wrap is-show">
                             <label>お名前<span class="c-bach--entry">必須</span></label>
-                            <input type="text">
-                            <!--                            <input type="text" name="your_name" value="<?php if( !empty($_POST['your_name']) ){ echo $_POST['your_name']; } ?>">-->
+                            <input type="text" name="name" value="<?php if( !empty($_POST['name']) ){ echo $_POST['your_name']; } ?>" required>
                         </div>
                         <div class="element_wrap is-show">
                             <label>メールアドレス<span class="c-bach--entry">必須</span></label>
-                            <input type="text">
-                            <!--                            <input type="text" name="email" value="<?php if( !empty($_POST['email']) ){ echo $_POST['email']; } ?>">-->
+                            <input type="email" name="email" value="<?php if( !empty($_POST['email']) ){ echo $_POST['email']; } ?>" required>
                         </div>
                         <div class="element_wrap is-show">
                             <label>電話番号<span class="c-bach--entry">必須</span></label>
-                            <input type="text">
-                            <!--                                <input type="text" name="tel" value="<?php if( !empty($_POST['tel']) ){ echo $_POST['tel']; } ?>">-->
+                            <input type="tel" name="tel" value="<?php if( !empty($_POST['tel']) ){ echo $_POST['tel']; } ?>" required>
                         </div>
                         <div class="element_wrap is-show">
                             <label>お問い合わせ内容</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                            <!--                            <textarea name="contact"><?php if( !empty($_POST['contact']) ){ echo $_POST['contact']; } ?></textarea>-->
+                            <textarea name="contact"><?php if( !empty($_POST['contact']) ){ echo $_POST['contact']; } ?></textarea>
                         </div>
                         <input class="is-show" type="submit" name="btn_confirm" value="話を聞いてみる（確認画面へ）">
                     </form>
-                    <!--                    <?php endif; ?>-->
                 </div>
                 <div class="p-linelink">
                     <p class="p-linelink__text is-show">もしくは</p>
@@ -1320,14 +1268,15 @@
             </div>
             <!-- /.l-entry -->
         </main>
-        <!-- /.l-container -->
         <footer class="l-footer">
             <small class="p-copyright">ここにコピーが入ります</small>
         </footer>
+        <!-- /.l-footer -->
     </div>
-    <!-- /.l-footer -->
+
     <script src="./js/smooth-scroll.js"></script>
     <script src="./js/scrollreveal.min.js"></script>
+    <script src="./js/contact.js"></script>
     <script>
         window.onload = function() {
             var lastWidget = document.getElementById("about");
@@ -1344,7 +1293,7 @@
         const bg = document.getElementById("loader");
         loading.addEventListener("animationend", function() {
             fadeOut(bg, 00);
-            document.body.style.position = "relative";
+            document.getElementById("index").style.position = "relative";
         });
 
         function navigationTrigger() {

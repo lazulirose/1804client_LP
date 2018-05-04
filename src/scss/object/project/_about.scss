@@ -1,76 +1,80 @@
-    .p-about {
-        @include mq-up(lg) {
-            display: flex;
-            margin-top: -130px;
-            justify-content: space-between;
-        }
-    }
+/*****-------------------------------
+    About style
+-------------------------------*****/
 
-    .p-about__viasual {
-        display: block;
-        position: relative;
-        z-index: 2;
-        width: 100%;
-        max-width: 342px;
-        @include mq-up(lg) {
-            width: 535px;
-            max-width: inherit;
-            height: 383px;
-            margin-top: 15px;
-            margin-left: 30px;
-            padding-right: 0;
-        }
+.p-about {
+    @include mq-up(lg) {
+        display: flex;
+        margin-top: -130px;
+        justify-content: space-between;
     }
+}
 
-    .p-about__body {
-        padding: 20px 0;
-        @include mq-up(lg) {
-            padding: 185px 0 0px;
-            width: 486px;
-        }
+.p-about__viasual {
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 342px;
+    @include mq-up(lg) {
+        width: 535px;
+        max-width: inherit;
+        height: 383px;
+        margin-top: 15px;
+        margin-left: 30px;
+        padding-right: 0;
     }
+}
 
-    .p-about__body__copy {
-        text-align: center;
+.p-about__body {
+    padding: 20px 0;
+    @include mq-up(lg) {
+        padding: 185px 0 0px;
+        width: 486px;
+    }
+}
+
+.p-about__body__copy {
+    text-align: center;
+    span {
+        display: inline-block;
+        padding: 0 23px;
+        margin-bottom: 15px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 2.5;
+        background-color: $main;
+    }
+    @include mq-up(lg) {
+        text-align: left;
         span {
-            display: inline-block;
-            padding: 0 23px;
-            margin-bottom: 15px;
-            color: #fff;
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 2.5;
-            background-color: $main;
-        }
-        @include mq-up(lg) {
-            text-align: left;
-            span {
-                height: 64px;
-                padding: 0 28px;
-                margin-bottom: 13px;
-                font-size: 25px;
-                line-height: 2.6;
-                letter-spacing: 2px;
-            }
+            height: 64px;
+            padding: 0 28px;
+            margin-bottom: 13px;
+            font-size: 25px;
+            line-height: 2.6;
+            letter-spacing: 2px;
         }
     }
+}
 
-    .p-about__body__text {
-        line-height: 1.6;
-        @include mq-up(lg) {
-            padding-right: 50px;
-            margin-top: 15px;
-            line-height: 1.8;
-        }
+.p-about__body__text {
+    line-height: 1.6;
+    @include mq-up(lg) {
+        padding-right: 50px;
+        margin-top: 15px;
+        line-height: 1.8;
     }
+}
 
-    .l-about .c-sectiontitel,
-    .l-about .c-sectiontext {
-        @include mq-up(lg) {
-            margin-right: 32px;
-            margin-bottom: -6px;
-            text-align: right;
-        }
+.l-about .c-sectiontitel,
+.l-about .c-sectiontext {
+    @include mq-up(lg) {
+        margin-right: 32px;
+        margin-bottom: -6px;
+        text-align: right;
     }
+}
 
-    .l-about .c-sectiontitel {}
+.l-about .c-sectiontitel {}

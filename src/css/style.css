@@ -216,8 +216,6 @@ html {
   overflow-y: scroll; }
 
 body {
-  position: fixed;
-  overflow-x: hidden;
   font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
   font-weight: 500;
   overflow-x: hidden;
@@ -529,6 +527,10 @@ label {
     Layout setting
 
 -------------------------------*****/
+#index {
+  position: fixed;
+  overflow-x: hidden; }
+
 /*****-------------------------------
     Layout
 -------------------------------*****/
@@ -709,6 +711,10 @@ label {
   padding: 70px 20px;
   background-color: #f4f4f4; }
 
+#confirm .l-entry,
+#thanks .l-entry {
+  padding-top: 130px; }
+
 .l-footer {
   position: relative;
   width: 100%;
@@ -719,6 +725,9 @@ label {
 
     Component setting
 
+-------------------------------*****/
+/*****-------------------------------
+    Component nav
 -------------------------------*****/
 .c-nav {
   position: relative; }
@@ -855,6 +864,9 @@ label {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMDAgMTAwMCI+PGcgZmlsbD0iIzAwMCI+PHBhdGggZD0iTTg4Ny4yLDIwOS4yTDQ5OS43LDU4OS4xTDExMi44LDIwOS43TDEwLDMxMC41bDQ4OS43LDQ4MC4zTDk5MCwzMTBMODg3LjIsMjA5LjJ6Ii8+PC9nPg0KPC9zdmc+DQo=);
   content: ""; }
 
+/*****-------------------------------
+    Component text
+-------------------------------*****/
 .c-sectiontitel {
   position: relative;
   z-index: 300;
@@ -936,6 +948,9 @@ h3.c-sectiontitel {
       margin-bottom: 75px;
       font-weight: bold; } }
 
+/*****-------------------------------
+    Component card
+-------------------------------*****/
 .c-card {
   position: relative;
   z-index: 100;
@@ -998,6 +1013,9 @@ h3.c-sectiontitel {
       height: auto;
       margin-bottom: 34px; } }
 
+/*****-------------------------------
+    Slider text
+-------------------------------*****/
 .c-slider {
   position: relative;
   z-index: 200;
@@ -1331,6 +1349,9 @@ h3.c-sectiontitel {
 .p-bach--circle {
   background-color: rgba(0, 0, 0, 0.4); }
 
+/*****-------------------------------
+    Loading style
+-------------------------------*****/
 .p-loading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1372,6 +1393,9 @@ h3.c-sectiontitel {
       -webkit-animation: text-in-lg 5s ease-in-out .6s;
               animation: text-in-lg 5s ease-in-out .6s; } }
 
+/*****-------------------------------
+    Keyviasual style
+-------------------------------*****/
 .p-keyviasual {
   width: 100%;
   height: 100vh;
@@ -1462,6 +1486,9 @@ h3.c-sectiontitel {
   -webkit-animation: arrow-down 1.35s ease 2s infinite;
           animation: arrow-down 1.35s ease 2s infinite; }
 
+/*****-------------------------------
+    About style
+-------------------------------*****/
 @media screen and (min-width: 1090px) {
   .p-about {
     display: -webkit-box;
@@ -1531,6 +1558,9 @@ h3.c-sectiontitel {
     margin-bottom: -6px;
     text-align: right; } }
 
+/*****-------------------------------
+    Contents style
+-------------------------------*****/
 .p-contents__cards {
   position: relative;
   max-width: 340px;
@@ -1613,6 +1643,9 @@ h3.c-sectiontitel {
     margin-left: 90px;
     text-align: left; } }
 
+/*****-------------------------------
+    Schedule style
+-------------------------------*****/
 .p-schedule__cards {
   position: relative;
   top: -80px;
@@ -1752,6 +1785,9 @@ input:checked ~ .c-card__arrow::after {
   background-repeat: no-repeat;
   content: ""; }
 
+/*****-------------------------------
+    Ambassador Style
+-------------------------------*****/
 .p-tab__content {
   display: none; }
 
@@ -1777,6 +1813,9 @@ input:checked + .p-tab__head {
 .p-tab {
   text-align: center; }
 
+/*****-------------------------------
+    Q&A style
+-------------------------------*****/
 .c-accordion {
   margin-bottom: 10px; }
 
@@ -1891,6 +1930,9 @@ input:checked ~ .p-qa__container--a {
       padding: 33px 50px 33px 16px;
       font-size: 16px; } }
 
+/*****-------------------------------
+    Partner style
+-------------------------------*****/
 .l-partner {
   position: relative;
   text-align: center; }
@@ -1903,6 +1945,9 @@ input:checked ~ .p-qa__container--a {
         width: 70%;
         max-height: 150px; } }
 
+/*****-------------------------------
+    Messege style
+-------------------------------*****/
 .p-messege {
   position: relative;
   right: 0;
@@ -1954,6 +1999,9 @@ input:checked ~ .p-qa__container--a {
       font-size: 16px;
       line-height: 2; } }
 
+/*****-------------------------------
+    Wantedly style
+-------------------------------*****/
 .p-wantedly__inner {
   position: relative;
   color: #fff;
@@ -2016,6 +2064,9 @@ input:checked ~ .p-qa__container--a {
   .p-bach--circle:nth-child(3n+1) {
     margin-left: 0; } }
 
+/*****-------------------------------
+    Entry Style
+-------------------------------*****/
 .p-entryform {
   position: relative;
   padding: 30px 20px;
@@ -2027,7 +2078,8 @@ input:checked ~ .p-qa__container--a {
       max-width: 1020px;
       padding: 30px 40px;
       margin: 80px auto 45px; } }
-  .p-entryform input[type="submit"] {
+  .p-entryform input[type="submit"],
+  .p-entryform button {
     display: block;
     width: 100%;
     max-width: 290px;
@@ -2037,11 +2089,14 @@ input:checked ~ .p-qa__container--a {
     color: #fff;
     font-weight: bold;
     letter-spacing: 1px;
-    background-color: #1aa1e6; }
-    .p-entryform input[type="submit"]:hover {
+    background-color: #1aa1e6;
+    cursor: pointer; }
+    .p-entryform input[type="submit"]:hover,
+    .p-entryform button:hover {
       background-color: #0084bb; }
     @media screen and (min-width: 1090px) {
-      .p-entryform input[type="submit"] {
+      .p-entryform input[type="submit"],
+      .p-entryform button {
         max-width: 545px;
         height: 90px;
         font-size: 18px; } }
@@ -2077,10 +2132,14 @@ input:checked ~ .p-qa__container--a {
       margin-bottom: 10px;
       font-size: 13px; } }
 
-.element_wrap input[type="text"] {
+.element_wrap input[type="text"],
+.element_wrap input[type="email"],
+.element_wrap input[type="tel"] {
   height: 38px; }
   @media screen and (min-width: 1090px) {
-    .element_wrap input[type="text"] {
+    .element_wrap input[type="text"],
+    .element_wrap input[type="email"],
+    .element_wrap input[type="tel"] {
       height: 65px; } }
 
 .element_wrap textarea {
@@ -2088,6 +2147,12 @@ input:checked ~ .p-qa__container--a {
   @media screen and (min-width: 1090px) {
     .element_wrap textarea {
       margin-bottom: 30px; } }
+
+.element_wrap p {
+  width: 95%;
+  padding: 30px 0 60px;
+  margin: auto;
+  font-weight: bold; }
 
 .c-bach--entry {
   display: inline-block;
@@ -2175,6 +2240,38 @@ form::after {
     .p-linelink__button::after {
       bottom: 45px; } }
 
+/*****-------------------------------
+    Confirm and thanks Style
+-------------------------------*****/
+#confirm .p-entryform,
+#thanks .p-entryform {
+  padding-bottom: 80px; }
+
+#thanks .p-entryform__text + p {
+  margin-bottom: 60px;
+  text-align: center;
+  line-height: 2; }
+
+#thanks button {
+  position: relative;
+  background-color: #6f6f6f; }
+
+@media screen and (min-width: 1090px) {
+  #thanks button::after {
+    display: block;
+    position: absolute;
+    bottom: 35px;
+    width: 545px;
+    height: 15px;
+    margin: auto;
+    background-image: url(../../../images/left.svg);
+    background-position: center left 40px;
+    background-repeat: no-repeat;
+    content: ""; } }
+
+/*****-------------------------------
+    Fotter style
+-------------------------------*****/
 .p-copyright {
   display: block;
   padding: 20px; }

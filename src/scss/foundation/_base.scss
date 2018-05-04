@@ -11,8 +11,6 @@ html {
 }
 
 body {
-    position: fixed;
-    overflow-x: hidden;
     @include font-family("yugothic");
     font-weight: 500;
     overflow-x: hidden;
