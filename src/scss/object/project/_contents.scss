@@ -6,7 +6,6 @@
     position: relative;
     max-width: 340px;
     margin: 0 auto 20px;
-
     @include mq-up(lg) {
         display: flex;
         max-width: 1020px;
@@ -29,8 +28,6 @@
     .c-card {
         position: relative;
         margin-bottom: 20px;
-            border: solid 5px $main;
-
         @include mq-up(lg) {
             height: 450px;
             margin-bottom: 40px;
