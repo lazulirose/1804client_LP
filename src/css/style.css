@@ -1998,7 +1998,7 @@ input:checked ~ .p-qa__container--a {
     .p-messege--title {
       margin-top: 30px;
       margin-bottom: 30px;
-      font-size: 26px;
+      font-size: 34px;
       letter-spacing: 1px; } }
 
 .p-messege--title::after {
@@ -2016,12 +2016,12 @@ input:checked ~ .p-qa__container--a {
 .p-messege--text {
   font-size: 14px;
   line-height: 1.8;
-  letter-spacing: 2; }
+  letter-spacing: 1; }
   @media screen and (min-width: 1090px) {
     .p-messege--text {
       padding: 0 50px;
       font-size: 16px;
-      line-height: 2.5; } }
+      line-height: 2; } }
 
 .p-messege--text:nth-child(3) {
   margin: 20px 0; }
