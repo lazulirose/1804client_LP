@@ -18,9 +18,11 @@
     width: 300px;
     padding-top: 30px;
     margin: auto;
+    line-height: 1.6;
     @include mq-up(md) {
         width: 100%;
         max-width: 1000px;
+        line-height: inherit;
     }
 }
 
