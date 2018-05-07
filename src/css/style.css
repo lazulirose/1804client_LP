@@ -1421,7 +1421,7 @@ h3.c-sectiontitel {
 
 .p-keyviasual__tagline {
   position: absolute;
-  bottom: 57%;
+  bottom: 49vh;
   display: block;
   width: 100%;
   height: 25px;
@@ -1439,9 +1439,12 @@ h3.c-sectiontitel {
     @media screen and (min-width: 1090px) {
       .p-keyviasual__tagline img {
         max-width: 800px; } }
+  @media screen and (min-width: 768px) {
+    .p-keyviasual__tagline {
+      bottom: 50vh; } }
   @media screen and (min-width: 1090px) {
     .p-keyviasual__tagline {
-      bottom: 60%; } }
+      bottom: 55vh; } }
 
 .p-keyviasual__text {
   position: absolute;
