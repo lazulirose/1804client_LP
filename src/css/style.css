@@ -2161,7 +2161,10 @@ input:checked ~ .p-qa__container--a {
 .element_wrap input[type="text"],
 .element_wrap input[type="email"],
 .element_wrap input[type="tel"] {
-  height: 38px; }
+  height: 38px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   @media screen and (min-width: 1090px) {
     .element_wrap input[type="text"],
     .element_wrap input[type="email"],
@@ -2169,7 +2172,10 @@ input:checked ~ .p-qa__container--a {
       height: 65px; } }
 
 .element_wrap textarea {
-  height: 130px; }
+  height: 130px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   @media screen and (min-width: 1090px) {
     .element_wrap textarea {
       margin-bottom: 30px; } }

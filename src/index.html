@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <title>KOKOKARA</title>
     <meta content="" name="description">
@@ -1160,19 +1160,19 @@
                     <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
                         <div class="element_wrap is-show">
                             <label>お名前<span class="c-bach--entry">必須</span></label>
-                            <input type="text" name="name" value="<?php if( !empty($_POST['name']) ){ echo $_POST['your_name']; } ?>" required>
+                            <input type="text" name="name" value="<?php if( !empty($_POST['name']) ){ echo $_POST['your_name']; } ?>" placeholder="山本太郎" required>
                         </div>
                         <div class="element_wrap is-show">
                             <label>メールアドレス<span class="c-bach--entry">必須</span></label>
-                            <input type="email" name="email" value="<?php if( !empty($_POST['email']) ){ echo $_POST['email']; } ?>" required>
+                            <input type="email" name="email" value="<?php if( !empty($_POST['email']) ){ echo $_POST['email']; } ?>" placeholder="taro@kokokara.jp" required>
                         </div>
                         <div class="element_wrap is-show">
                             <label>電話番号<span class="c-bach--entry">必須</span></label>
-                            <input type="tel" name="tel" value="<?php if( !empty($_POST['tel']) ){ echo $_POST['tel']; } ?>" required>
+                            <input type="tel" name="tel" value="<?php if( !empty($_POST['tel']) ){ echo $_POST['tel']; } ?>" placeholder="090-0000-0000" required>
                         </div>
                         <div class="element_wrap is-show">
                             <label>お問い合わせ内容</label>
-                            <textarea name="contact"><?php if( !empty($_POST['contact']) ){ echo $_POST['contact']; } ?></textarea>
+                            <textarea name="contact" placeholder="簡単な自己紹介をご記入ください。"><?php if( !empty($_POST['contact']) ){ echo $_POST['contact']; } ?></textarea>
                         </div>
                         <input class="is-show" type="submit" name="btn_confirm" value="話を聞いてみる（確認画面へ）">
                     </form>

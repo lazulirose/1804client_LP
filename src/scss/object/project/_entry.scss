@@ -75,12 +75,16 @@
     input[type="email"],
     input[type="tel"] {
         height: 38px;
+        padding: 0 20px;
+        box-sizing: border-box;
         @include mq-up(lg) {
             height: 65px;
         }
     }
     textarea {
         height: 130px;
+        padding: 20px;
+        box-sizing: border-box;
         @include mq-up(lg) {
             margin-bottom: 30px;
         }
