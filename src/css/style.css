@@ -639,7 +639,7 @@ label {
 
 .l-partner {
   position: relative;
-  padding: 55px 0 80px; }
+  padding: 55px 0 70px; }
 
 .l-messege {
   position: relative;
@@ -924,9 +924,9 @@ h3.c-sectiontitel {
   z-index: 300;
   max-width: 1090px;
   margin: 0 auto 8px;
-  font-size: 11px;
   color: #6f6f6f;
-  line-height: 2.5;
+  font-size: 11px;
+  line-height: 1.2;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-align: center;
@@ -939,8 +939,8 @@ h3.c-sectiontitel {
 .c-sectiontitel--sub {
   margin-bottom: 8px;
   color: #6f6f6f;
-  font-size: 40px;
   font-weight: 500;
+  font-size: 40px;
   text-align: center;
   font-family: "Montserrat", sans-serif; }
   @media screen and (min-width: 1090px) {
@@ -1962,14 +1962,49 @@ input:checked ~ .p-qa__container--a {
 .l-partner {
   position: relative;
   text-align: center; }
-  .l-partner img {
-    width: 100%;
-    max-height: 375px;
-    margin: auto; }
+
+.p-partner {
+  position: relative;
+  margin-top: 60px; }
+
+.p-partner::before {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../images/partner-filter.png);
+  background-color: rgba(255, 255, 255, 0.9);
+  background-position: center;
+  background-repeat: no-repeat;
+  content: ""; }
+
+.p-partner--banners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+  .p-partner--banners li {
+    display: block;
+    width: 50%;
+    max-height: 100px;
+    margin-bottom: 66px;
+    background-color: #bbb; }
     @media screen and (min-width: 1090px) {
-      .l-partner img {
-        width: 70%;
-        max-height: 150px; } }
+      .p-partner--banners li {
+        width: 30%; } }
+    .p-partner--banners li img {
+      display: block;
+      width: 100%; }
+  .p-partner--banners li:nth-child(n+5) {
+    margin-bottom: 0; }
+  @media screen and (min-width: 1090px) {
+    .p-partner--banners li:nth-child(n+4) {
+      margin-bottom: 0; } }
 
 /*****-------------------------------
     Messege style
@@ -2155,7 +2190,8 @@ input:checked ~ .p-qa__container--a {
 
 .element_wrap label {
   margin-bottom: 15px;
-  font-weight: 500; }
+  font-weight: 500;
+  font-size: 14px; }
   @media screen and (min-width: 1090px) {
     .element_wrap label {
       margin-bottom: 10px;

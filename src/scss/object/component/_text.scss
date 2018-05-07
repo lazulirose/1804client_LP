@@ -56,9 +56,9 @@ h3.c-sectiontitel {
     z-index: 300;
     max-width: 1090px;
     margin: 0 auto 8px;
-    font-size: 11px;
     color: #6f6f6f;
-    line-height: 2.5;
+    font-size: 11px;
+    line-height: 1.2;
     @include font-family("en");
     font-weight: 500;
     text-align: center;
@@ -72,8 +72,8 @@ h3.c-sectiontitel {
 .c-sectiontitel--sub {
     margin-bottom: 8px;
     color: #6f6f6f;
-    font-size: 40px;
     font-weight: 500;
+    font-size: 40px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     @include mq-up(lg) {
