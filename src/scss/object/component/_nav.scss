@@ -130,7 +130,7 @@
     line-height: 2.3;
     background: #ffff00;
     &:hover {
-        opacity: .3;
+        opacity: .6;
     }
     @include mq-up(lg) {
         width: 160px;
@@ -143,8 +143,8 @@
 .menu__entry::after {
     display: block;
     position: absolute;
-    right: 28px;
-    bottom: 14px;
+    right: 22px;
+    bottom: 15px;
     width: 10px;
     height: 10px;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMDAgMTAwMCI+PGcgZmlsbD0iIzAwMCI+PHBhdGggZD0iTTg4Ny4yLDIwOS4yTDQ5OS43LDU4OS4xTDExMi44LDIwOS43TDEwLDMxMC41bDQ4OS43LDQ4MC4zTDk5MCwzMTBMODg3LjIsMjA5LjJ6Ii8+PC9nPg0KPC9zdmc+DQo=);
