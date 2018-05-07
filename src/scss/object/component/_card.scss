@@ -6,6 +6,7 @@
     position: relative;
     z-index: 100;
     max-width: 330px;
+    background-color: #fff;
     @include mq-up(lg) {
         width: auto;
     }

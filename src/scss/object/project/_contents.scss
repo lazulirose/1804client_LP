@@ -55,6 +55,7 @@
         object-fit: cover;
         object-position: 0 -30px;
         transform: scale(1, 0.9);
+        opacity: .8;
         @include mq-up(lg) {
             height: 270px;
             object-position: center;
