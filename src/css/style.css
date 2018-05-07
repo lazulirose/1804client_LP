@@ -959,8 +959,7 @@ h3.c-sectiontitel {
 .c-card {
   position: relative;
   z-index: 100;
-  max-width: 330px;
-  background-color: #fff; }
+  max-width: 330px; }
   @media screen and (min-width: 1090px) {
     .c-card {
       width: auto; } }
@@ -1596,7 +1595,8 @@ h3.c-sectiontitel {
         bottom: 80px; } }
   .p-contents__cards .c-card {
     position: relative;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    background-color: #fff; }
     @media screen and (min-width: 1090px) {
       .p-contents__cards .c-card {
         height: 450px;

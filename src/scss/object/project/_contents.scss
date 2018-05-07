@@ -28,6 +28,7 @@
     .c-card {
         position: relative;
         margin-bottom: 20px;
+        background-color: #fff;
         @include mq-up(lg) {
             height: 450px;
             margin-bottom: 40px;
