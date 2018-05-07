@@ -72,6 +72,7 @@
         }
     }
     .c-card__text {
+        line-height: 2;
         @include mq-up(lg) {
             padding: 24px 30px;
         }

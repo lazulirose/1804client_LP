@@ -10,7 +10,7 @@
     margin: 0 auto 6px;
     padding: 0 20px;
     @include font-family("en");
-    font-weight: bold;
+    font-weight: 500;
     color: #393939;
     font-size: 50px;
     text-align: center;
@@ -24,7 +24,6 @@
     }
     &+.c-sectiontext {
         margin-bottom: 30px;
-        letter-spacing: 1px;
         @include mq-up(lg) {
             margin-bottom: 45px;
         }
@@ -39,7 +38,7 @@ h3.c-sectiontitel {
     margin: 0 auto 8px;
     padding: 0 20px;
     @include font-family("en");
-    font-weight: bold;
+    font-weight: 500;
     color: #393939;
     font-size: 48px;
     text-align: center;
@@ -59,14 +58,14 @@ h3.c-sectiontitel {
     margin: 0 auto 8px;
     font-size: 11px;
     color: #6f6f6f;
-    line-height: 1.5;
+    line-height: 2.5;
     @include font-family("en");
-    font-weight: normal;
+    font-weight: 500;
     text-align: center;
-    letter-spacing: .5px;
+    letter-spacing: 2px;
     @include mq-up(lg) {
         font-size: 16px;
-        font-weight: normal;
+        font-weight: 500;
     }
 }
 
@@ -74,19 +73,18 @@ h3.c-sectiontitel {
     margin-bottom: 8px;
     color: #6f6f6f;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    letter-spacing: 1.5px;
     @include mq-up(lg) {
         margin: 10px auto 20px;
         font-size: 55px;
-        font-weight: bold;
+        font-weight: 500;
     }
     &+.c-sectiontext {
         @include mq-up(lg) {
-            margin-bottom: 75px;
-            font-weight: bold;
+            margin-bottom: 25px;
+            font-weight: 500;
         }
     }
 }

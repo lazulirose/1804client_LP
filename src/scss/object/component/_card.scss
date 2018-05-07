@@ -63,9 +63,10 @@
 
 .c-card__text {
     padding: 16px 20px;
-    line-height: 1.4;
+    letter-spacing: 1px;
     @include mq-up(lg) {
         height: auto;
         margin-bottom: 34px;
+        font-size: 14px;
     }
 }
