@@ -32,6 +32,7 @@
     padding: 14px 50px 14px 16px;
     cursor: pointer;
     background-color: #fff;
+    font-weight: bold;
     font-size: 12px;
     span {
         margin-right: 13px;
@@ -43,6 +44,7 @@
     @include mq-up(lg) {
         height: 80px;
         padding: 33px 50px 33px 16px;
+        font-weight: 500;
         font-size: 16px;
     }
 }
@@ -106,6 +108,7 @@ input:checked+.p-qa__container--q::after {
     }
     @include mq-up(lg) {
         padding: 0px 50px 0px 16px;
+        font-weight: 500;
         font-size: 16px;
     }
 }
