@@ -63,7 +63,6 @@
 .p-about__body__text {
     line-height: 1.6;
     @include mq-up(lg) {
-        padding-right: 50px;
         margin-top: 15px;
         line-height: 1.8;
     }

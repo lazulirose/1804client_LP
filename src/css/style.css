@@ -887,13 +887,13 @@ label {
   letter-spacing: 1px; }
   @media screen and (min-width: 1090px) {
     .c-sectiontitel {
+      padding: 0;
       margin-bottom: 0;
       font-size: 120px;
       font-weight: 500;
       letter-spacing: -3px; } }
   .c-sectiontitel + .c-sectiontext {
     margin-bottom: 30px;
-    font-weight: bold;
     letter-spacing: 1px; }
     @media screen and (min-width: 1090px) {
       .c-sectiontitel + .c-sectiontext {
@@ -926,6 +926,7 @@ h3.c-sectiontitel {
   margin: 0 auto 8px;
   font-size: 11px;
   color: #6f6f6f;
+  line-height: 1.5;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   text-align: center;
@@ -1368,6 +1369,7 @@ h3.c-sectiontitel {
     right: 0;
     bottom: 0;
     left: 0;
+    width: 100%;
     max-width: 320px;
     margin: auto;
     -webkit-animation: text-down 6.3s;
@@ -1552,7 +1554,6 @@ h3.c-sectiontitel {
   line-height: 1.6; }
   @media screen and (min-width: 1090px) {
     .p-about__body__text {
-      padding-right: 50px;
       margin-top: 15px;
       line-height: 1.8; } }
 
@@ -1671,7 +1672,7 @@ h3.c-sectiontitel {
         max-width: 1020px;
         max-height: 280px;
         margin: 0 auto 30px;
-        border: solid 5px #1aa1e6;
+        border: solid 5px #bfe9fc;
         overflow: hidden; } }
   .p-schedule__cards .c-bach {
     left: 0;
@@ -1713,7 +1714,7 @@ h3.c-sectiontitel {
   .p-schedule__cards .c-card__body {
     position: relative;
     top: -12px;
-    border: solid 5px #1aa1e6; }
+    border: solid 5px #bfe9fc; }
     @media screen and (min-width: 1090px) {
       .p-schedule__cards .c-card__body {
         top: 0;
@@ -1772,7 +1773,7 @@ input:checked ~ .contains {
   width: 40px;
   padding: 0 13px;
   margin: auto;
-  background-color: #1aa1e6; }
+  background-color: #bfe9fc; }
   @media screen and (min-width: 1090px) {
     .c-card__arrow {
       display: none; } }

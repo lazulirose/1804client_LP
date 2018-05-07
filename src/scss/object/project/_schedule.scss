@@ -19,7 +19,7 @@
             max-width: 1020px;
             max-height: 280px;
             margin: 0 auto 30px;
-            border: solid 5px $main;
+            border: solid 5px #bfe9fc;
             overflow: hidden;
         }
     }
@@ -60,7 +60,7 @@
     .c-card__body {
         position: relative;
         top: -12px;
-        border: solid 5px $main;
+        border: solid 5px #bfe9fc;
         @include mq-up(lg) {
             top: 0;
             max-width: 770px;
@@ -124,7 +124,7 @@ input:checked~.contains {
     width: 40px;
     padding: 0 13px;
     margin: auto;
-    background-color: $main;
+    background-color: #bfe9fc;
     @include mq-up(lg) {
         display: none;
     }
