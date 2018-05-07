@@ -221,6 +221,7 @@ body {
   overflow-x: hidden;
   color: #333;
   font-size: 14px;
+  -webkit-text-size-adjust: 100%;
   letter-spacing: 1.2px; }
   @media screen and (min-width: 1090px) {
     body {
@@ -679,7 +680,7 @@ label {
 .l-wantedly {
   position: relative;
   overflow: hidden;
-  padding: 35px 20px 14px 40px;
+  padding: 35px 20px 14px;
   width: 100%; }
   .l-wantedly::before {
     display: block;
@@ -894,10 +895,12 @@ label {
       font-weight: 500;
       letter-spacing: -3px; } }
   .c-sectiontitel + .c-sectiontext {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-size: 11px; }
     @media screen and (min-width: 1090px) {
       .c-sectiontitel + .c-sectiontext {
-        margin-bottom: 45px; } }
+        margin-bottom: 45px;
+        font-size: 16px; } }
 
 h3.c-sectiontitel {
   position: relative;
@@ -948,10 +951,12 @@ h3.c-sectiontitel {
       margin: 10px auto 20px;
       font-size: 55px;
       font-weight: 500; } }
-  @media screen and (min-width: 1090px) {
-    .c-sectiontitel--sub + .c-sectiontext {
-      margin-bottom: 25px;
-      font-weight: 500; } }
+  .c-sectiontitel--sub + .c-sectiontext {
+    font-size: 11px; }
+    @media screen and (min-width: 1090px) {
+      .c-sectiontitel--sub + .c-sectiontext {
+        margin-bottom: 25px;
+        font-weight: 500; } }
 
 /*****-------------------------------
     Component card
@@ -1453,7 +1458,6 @@ h3.c-sectiontitel {
   right: 0;
   margin: auto;
   color: #fff;
-  font-size: 10px;
   font-weight: 500;
   text-align: center;
   line-height: 2.3;
@@ -1463,7 +1467,7 @@ h3.c-sectiontitel {
   @media screen and (min-width: 768px) {
     .p-keyviasual__text {
       bottom: 25%;
-      font-size: 16px;
+      font-size: 12px;
       line-height: 1.8;
       letter-spacing: 1.8px; } }
   @media screen and (min-width: 1090px) {
@@ -1485,7 +1489,7 @@ h3.c-sectiontitel {
   color: #fff;
   font-weight: normal;
   text-align: center;
-  font-size: 7px;
+  font-size: 9px;
   letter-spacing: 2px; }
   @media screen and (min-width: 768px) {
     .p-keyviasual__scroll__text {
@@ -2195,8 +2199,7 @@ input:checked ~ .p-qa__container--a {
 
 .element_wrap label {
   margin-bottom: 15px;
-  font-weight: 500;
-  font-size: 14px; }
+  font-weight: 500; }
   @media screen and (min-width: 1090px) {
     .element_wrap label {
       margin-bottom: 10px;
@@ -2239,7 +2242,7 @@ input:checked ~ .p-qa__container--a {
   font-size: 9px;
   text-align: center;
   line-height: 1.6;
-  vertical-align: top;
+  vertical-align: text-bottom;
   background-color: #0084bb; }
   @media screen and (min-width: 1090px) {
     .c-bach--entry {
@@ -2247,8 +2250,7 @@ input:checked ~ .p-qa__container--a {
       height: 18px;
       margin-left: 8px;
       font-size: 11px;
-      line-height: 1.8;
-      vertical-align: text-bottom; } }
+      line-height: 1.8; } }
 
 .p-linelink {
   padding: 15px 20px 20px;

@@ -66,7 +66,6 @@
     label {
         margin-bottom: 15px;
         font-weight: 500;
-        font-size: 14px;
         @include mq-up(lg) {
             margin-bottom: 10px;
             font-size: 13px;
@@ -107,7 +106,7 @@
     font-size: 9px;
     text-align: center;
     line-height: 1.6;
-    vertical-align: top;
+    vertical-align: text-bottom;
     background-color: #0084bb;
     @include mq-up(lg) {
         width: 35px;
@@ -115,7 +114,6 @@
         margin-left: 8px;
         font-size: 11px;
         line-height: 1.8;
-        vertical-align: text-bottom;
     }
 }
 

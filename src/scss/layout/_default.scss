@@ -134,7 +134,7 @@
 .l-wantedly {
     position: relative;
     overflow: hidden;
-    padding: 35px 20px 14px 40px;
+    padding: 35px 20px 14px;
     width: 100%;
     &::before {
         @include p-bg("../../images/wantedly-bg.png");

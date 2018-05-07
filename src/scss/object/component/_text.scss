@@ -24,8 +24,10 @@
     }
     &+.c-sectiontext {
         margin-bottom: 30px;
+        font-size: 11px;
         @include mq-up(lg) {
             margin-bottom: 45px;
+            font-size: 16px;
         }
     }
 }
@@ -82,6 +84,7 @@ h3.c-sectiontitel {
         font-weight: 500;
     }
     &+.c-sectiontext {
+        font-size: 11px;
         @include mq-up(lg) {
             margin-bottom: 25px;
             font-weight: 500;

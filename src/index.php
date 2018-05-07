@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <title>KOKOKARA</title>
     <meta content="" name="description">
@@ -46,12 +46,12 @@
         <!-- /.l-header -->
         <main>
 
-            <div id="loader" class="l-loading">
+<div id="loader" class="l-loading">
 
-                <div id="loader-text" class="p-loading tagline">
-                    <img src="./images/tagline-black.png" alt="">
-                </div>
-            </div>
+    <div id="loader-text" class="p-loading tagline">
+        <img src="./images/tagline-black.png" alt="">
+    </div>
+</div>
             <div class="l-keyviasual">
                 <div class="p-keyviasual">
                     <img class="p-keyviasual__bg" src="./images/top-pc.png" alt="">
