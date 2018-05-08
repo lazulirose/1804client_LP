@@ -1,9 +1,53 @@
-/*****-------------------------------
-    Fotter style
+/*****-------------------------------------
+
+Fotter style
+
 -------------------------------*****/
+
+.p-footer {
+    font-size: 14px;
+}
+
+.p-footer__logo {
+    width: 180px;
+    margin: 0 auto 60px;
+}
+
+.p-footer__nav {
+    ul {
+        display: flex;
+        margin-bottom: 90px;
+        justify-content: center;
+        flex-direction: column;
+        @include mq-up(lg) {
+            margin-bottom: 120px;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+        }
+    }
+    li:not(:first-child) {
+        margin-top: 35px;
+        @include mq-up(lg) {
+            margin-top: 0;
+            margin-left: 24px;
+        }
+    }
+    a {
+        display: block;
+        margin-bottom: 0;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        @include mq-up(lg) {
+            font-size: 14px;
+        }
+    }
+}
 
 .p-copyright {
     display: block;
-    //    height: 62px;
-    padding: 20px;
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
 }

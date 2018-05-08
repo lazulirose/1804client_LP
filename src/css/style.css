@@ -725,8 +725,12 @@ label {
 .l-footer {
   position: relative;
   width: 100%;
-  background-color: #fff;
-  text-align: center; }
+  padding: 90px 20px 60px;
+  color: #fff;
+  background-color: #333; }
+  @media screen and (min-width: 1090px) {
+    .l-footer {
+      padding: 90px 20px; } }
 
 /*****-------------------------------
 
@@ -2352,9 +2356,62 @@ form::after {
     background-repeat: no-repeat;
     content: ""; } }
 
-/*****-------------------------------
-    Fotter style
+/*****-------------------------------------
+
+Fotter style
+
 -------------------------------*****/
+.p-footer {
+  font-size: 14px; }
+
+.p-footer__logo {
+  width: 180px;
+  margin: 0 auto 60px; }
+
+.p-footer__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 90px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media screen and (min-width: 1090px) {
+    .p-footer__nav ul {
+      margin-bottom: 120px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+.p-footer__nav li:not(:first-child) {
+  margin-top: 35px; }
+  @media screen and (min-width: 1090px) {
+    .p-footer__nav li:not(:first-child) {
+      margin-top: 0;
+      margin-left: 24px; } }
+
+.p-footer__nav a {
+  display: block;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 20px;
+  text-align: center; }
+  @media screen and (min-width: 1090px) {
+    .p-footer__nav a {
+      font-size: 14px; } }
+
 .p-copyright {
   display: block;
-  padding: 20px; }
+  margin: auto;
+  font-size: 14px;
+  text-align: center; }
