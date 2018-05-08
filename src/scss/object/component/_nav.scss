@@ -14,7 +14,7 @@
 .c-nav__logo {
     position: absolute;
     z-index: 1000000;
-    width: 100px;
+    width: 90px;
     margin-top: 24px;
     margin-left: 20px;
     cursor: pointer;
@@ -31,7 +31,7 @@
     top: 30px;
     right: 20px;
     z-index: 2000;
-    width: 20px;
+    width: 30px;
     height: 2px;
     background-color: #fff;
     color: transparent;
@@ -40,7 +40,7 @@
         position: absolute;
         right: 0px;
         display: block;
-        width: 20px;
+        width: 30px;
         height: 2px;
         background-color: #fff;
         content: "";
@@ -58,10 +58,10 @@
 
 .menu__tag {
     position: absolute;
-    bottom: -4px;
+    bottom: -5px;
     right: 32px;
     color: #fff;
-    font-size: 10px;
+    font-size: 12px;
     @include font-family("en");
     letter-spacing: 1.5px;
 }
