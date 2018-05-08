@@ -124,7 +124,7 @@
     }
     .p-bg--blur::before {
         @include p-bg("../../../images/messege-bg.png");
-        filter: brightness(80%);
+        filter: blur(2px) brightness(.7);
         @include mq-up(lg) {
             height: 600px;
         }
@@ -138,8 +138,8 @@
     width: 100%;
     &::before {
         @include p-bg("../../images/wantedly-bg.png");
-        height: 510px !important;
         filter: brightness(.6);
+        height: 510px !important;
     }
     @include mq-up(md) {
         height: 450px;

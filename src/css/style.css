@@ -608,8 +608,8 @@ label {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    -webkit-filter: blur(4px) brightness(80%);
-            filter: blur(4px) brightness(80%);
+    -webkit-filter: blur(4px) brightness(0.8);
+            filter: blur(4px) brightness(0.8);
     content: ""; }
     @media screen and (min-width: 1090px) {
       .l-schedule .p-bg--blur::before {
@@ -665,11 +665,11 @@ label {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    -webkit-filter: blur(4px) brightness(80%);
-            filter: blur(4px) brightness(80%);
+    -webkit-filter: blur(4px) brightness(0.8);
+            filter: blur(4px) brightness(0.8);
     content: "";
-    -webkit-filter: brightness(80%);
-            filter: brightness(80%); }
+    -webkit-filter: blur(2px) brightness(0.7);
+            filter: blur(2px) brightness(0.7); }
     @media screen and (min-width: 1090px) {
       .l-messege .p-bg--blur::before {
         height: 410px; } }
@@ -694,12 +694,12 @@ label {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    -webkit-filter: blur(4px) brightness(80%);
-            filter: blur(4px) brightness(80%);
+    -webkit-filter: blur(4px) brightness(0.8);
+            filter: blur(4px) brightness(0.8);
     content: "";
-    height: 510px !important;
     -webkit-filter: brightness(0.6);
-            filter: brightness(0.6); }
+            filter: brightness(0.6);
+    height: 510px !important; }
     @media screen and (min-width: 1090px) {
       .l-wantedly::before {
         height: 410px; } }

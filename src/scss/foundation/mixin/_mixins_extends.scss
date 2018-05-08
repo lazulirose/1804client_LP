@@ -71,7 +71,7 @@
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    filter: blur(4px) brightness(80%);
+    filter: blur(4px) brightness(.8);
     content: "";
     @include mq-up(lg) {
         height: 410px;
