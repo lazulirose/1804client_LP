@@ -13,11 +13,16 @@
 
 .c-nav__logo {
     position: absolute;
+    z-index: 1000000;
     width: 100px;
     margin-top: 24px;
     margin-left: 20px;
+    cursor: pointer;
     @include mq-up(lg) {
         width: 180px;
+    }
+    &:hover {
+        opacity: .6;
     }
 }
 

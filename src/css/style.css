@@ -746,12 +746,16 @@ label {
 
 .c-nav__logo {
   position: absolute;
+  z-index: 1000000;
   width: 100px;
   margin-top: 24px;
-  margin-left: 20px; }
+  margin-left: 20px;
+  cursor: pointer; }
   @media screen and (min-width: 1090px) {
     .c-nav__logo {
       width: 180px; } }
+  .c-nav__logo:hover {
+    opacity: .6; }
 
 .c-nav__toggle {
   position: absolute;
@@ -2166,7 +2170,8 @@ input:checked ~ .p-qa__container--a {
     cursor: pointer; }
     .p-entryform input[type="submit"]:hover,
     .p-entryform button:hover {
-      background-color: #0084bb; }
+      background-image: none;
+      background-color: #3a7bd5 !important; }
     @media screen and (min-width: 1090px) {
       .p-entryform input[type="submit"],
       .p-entryform button {
