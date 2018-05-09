@@ -1987,46 +1987,84 @@ input:checked ~ .p-qa__container--a {
 
 .p-partner {
   position: relative;
-  margin-top: 60px; }
+  margin-top: 60px;
+  max-height: 570px;
+  overflow: hidden; }
 
-.p-partner::before {
+.p-partner::before,
+.p-partner::after {
   display: block;
   position: absolute;
-  left: 0;
+  top: 0;
   right: 0;
+  left: 0;
   margin: auto;
   z-index: 1000;
-  width: 90%;
-  height: 100%;
-  background-image: url(../../../images/partner-filter.png);
-  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  color: #6f6f6f;
   background-position: center;
-  background-repeat: no-repeat;
-  content: ""; }
+  background-repeat: no-repeat; }
+
+.p-partner::before {
+  padding-top: 25%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(255, 255, 255, 0.9);
+  content: "Comming soon....."; }
+  @media screen and (min-width: 481px) {
+    .p-partner::before {
+      padding-top: 20%; } }
+  @media screen and (min-width: 768px) {
+    .p-partner::before {
+      padding-top: 8%; } }
+
+.p-partner::after {
+  height: 100%;
+  padding-top: 35%;
+  font-size: 14px;
+  content: "ただいま準備中です"; }
+  @media screen and (min-width: 481px) {
+    .p-partner::after {
+      padding-top: 27%; } }
+  @media screen and (min-width: 768px) {
+    .p-partner::after {
+      padding-top: 13%; } }
 
 .p-partner--banners {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%; }
+      flex-wrap: wrap; }
+  @media screen and (min-width: 1090px) {
+    .p-partner--banners {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
   .p-partner--banners li {
     display: block;
     width: 50%;
+    max-width: 250px;
     max-height: 100px;
     margin-bottom: 66px;
     background-color: #bbb; }
     @media screen and (min-width: 1090px) {
       .p-partner--banners li {
-        width: 30%; } }
+        width: 30%;
+        max-width: inherit; } }
     .p-partner--banners li img {
       display: block;
       width: 100%; }
-  .p-partner--banners li:nth-child(n+5) {
-    margin-bottom: 0; }
+  @media screen and (min-width: 1090px) {
+    .p-partner--banners li:nth-child(n+5) {
+      margin-bottom: 0; } }
   @media screen and (min-width: 1090px) {
     .p-partner--banners li:nth-child(n+4) {
       margin-bottom: 0; } }
