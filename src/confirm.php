@@ -1,61 +1,54 @@
 <?php
-    // フォームのボタンが押されたら
+mb_language('ja');
+mb_internal_encoding("UTF-8");
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // フォームから送信されたデータを各変数に格納
         $name = $_POST["name"];
         $email = $_POST["email"];
         $tel = $_POST["tel"];
         $contact  = $_POST["contact"];
     }
 
-    // 送信ボタンが押されたら
     if (isset($_POST["submit"])) {
-        // 送信ボタンが押された時に動作する処理をここに記述する
-        mb_language("ja");
-        mb_internal_encoding("UTF-8");
+    $header = null;
+	$auto_reply_subject = null;
+	$auto_reply_text = null;
+    $admin_reply_subject = null;
+	$admin_reply_text = null;
+	date_default_timezone_set('Asia/Tokyo');
+    	// ヘッダー情報を設定
+	$header = "MIME-Version: 1.0\n";
+	$header .= "From: KOKOKARA <lily9rin@gmail.com>\n";
+	$header .= "Reply-To: KOKOKARA <lily9rin@gmail.com>\n";
 
-        //mb_send_mail("kanda.it.school.trial@gmail.com", "メール送信テスト", "メール本文");
+	// 申し込み者用件名
+	$auto_reply_subject = 'お問い合わせありがとうございます。';
 
-        $subject = "［自動送信］お問い合わせ内容の確認";
+	// 申し込み者用本文
+	$auto_reply_text = "この度は、お問い合わせ頂き誠にありがとうございます。下記の内容でお問い合わせを受け付けました。\n\n";
+	$auto_reply_text .= "お問い合わせ日時：" . date("Y-m-d H:i") . "\n";
+	$auto_reply_text .= "氏名：" . $_POST['name'] . "\n";
+	$auto_reply_text .= "メールアドレス：" . $_POST['email'] . "\n\n";
+	$auto_reply_text .= "電話番号：" . $_POST['tel'] . "\n\n";
 
-            // メール本文を変数bodyに格納
-        $body = <<< EOM
-{$name}　様
+	$auto_reply_text .= "お問い合わせ内容：" . nl2br($_POST['contact']) . "\n\n";
+	$auto_reply_text .= "KOKOKARA 事務局";
 
-お問い合わせありがとうございます。
-以下のお問い合わせ内容を、メールにて確認させていただきました。
+	// メール送信
+	mb_send_mail( $_POST['email'], $auto_reply_subject, $auto_reply_text, $header);
+    // 運営用メール件名
+	$admin_reply_subject = "お問い合わせを受け付けました";
 
-===================================================
-【 お名前 】
-{$name}
+	// 運営用本文
+	$admin_reply_text = "下記の内容でお問い合わせがありました。\n\n";
+	$admin_reply_text .= "お問い合わせ日時：" . date("Y-m-d H:i") . "\n";
+	$admin_reply_text .= "氏名：" . $_POST['name'] . "\n";
+	$admin_reply_text .= "メールアドレス：" . $_POST['email'] . "\n\n";
+    $auto_reply_text .= "電話番号：" . $_POST['tel'] . "\n\n";
 
-【 メール 】
-{$email}
+	$admin_reply_text .= "お問い合わせ内容：" . nl2br($_POST['contact']) . "\n\n";
+	mb_send_mail( 'lily9rin@gmail.com', $admin_reply_subject, $admin_reply_text, $header);
 
-【 電話番号 】
-{$tel}
-
-【 内容 】
-{$contact}
-===================================================
-
-内容を確認のうえ、回答させて頂きます。
-しばらくお待ちください。
-EOM;
-
-        // 送信元のメールアドレスを変数fromEmailに格納
-        $fromEmail = "lily9rin@gmail.com";
-
-        // 送信元の名前を変数fromNameに格納
-        $fromName = "お問い合わせテスト";
-
-        // ヘッダ情報を変数headerに格納する
-        $header = "From: " .mb_encode_mimeheader($fromName) ."<{$fromEmail}>";
-
-        // メール送信を行う
-        mb_send_mail($email, $subject, $body, $header);
-
-        // サンクスページに画面遷移させる
         header("Location: ./thanks.php");
         exit;
     }
