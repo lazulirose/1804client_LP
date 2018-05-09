@@ -1389,7 +1389,7 @@ h3.c-sectiontitel {
             animation: text-down 6.3s; }
     @media screen and (max-width: 767px) {
       .p-loading img {
-        bottom: 23%; } }
+        bottom: 20%; } }
     @media screen and (min-width: 1090px) {
       .p-loading img {
         max-width: 800px; } }
@@ -1411,7 +1411,7 @@ h3.c-sectiontitel {
           animation: text-in 7s ease-in-out .6s; }
   @media screen and (max-width: 767px) {
     .p-loading::before {
-      bottom: 23%; } }
+      bottom: 20%; } }
   @media screen and (min-width: 1090px) {
     .p-loading::before {
       width: 800px;
