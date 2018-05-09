@@ -589,7 +589,7 @@ label {
   content: ""; }
   @media screen and (min-width: 1090px) {
     .l-contents::after {
-      top: -120px;
+      top: -130px;
       height: 370px; } }
 
 .l-schedule {

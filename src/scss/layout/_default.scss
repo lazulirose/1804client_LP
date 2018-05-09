@@ -59,7 +59,7 @@
     background-color: #fff;
     content: "";
     @include mq-up(lg) {
-        top: -120px;
+        top: -130px;
         height: 370px;
     }
 }
