@@ -18,8 +18,8 @@ mb_internal_encoding("UTF-8");
 	date_default_timezone_set('Asia/Tokyo');
     	// ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
-	$header .= "From: KOKOKARA <lily9rin@gmail.com>\n";
-	$header .= "Reply-To: KOKOKARA <lily9rin@gmail.com>\n";
+	$header .= "From: KOKOKARA <info@venture-partners.co.jp>\n";
+	$header .= "Reply-To: KOKOKARA <info@venture-partners.co.jp>\n";
 
 	// 申し込み者用件名
 	$auto_reply_subject = 'お問い合わせありがとうございます。';
@@ -47,7 +47,7 @@ mb_internal_encoding("UTF-8");
     $auto_reply_text .= "電話番号：" . $_POST['tel'] . "\n\n";
 
 	$admin_reply_text .= "お問い合わせ内容：" . nl2br($_POST['contact']) . "\n\n";
-	mb_send_mail( 'lily9rin@gmail.com', $admin_reply_subject, $admin_reply_text, $header);
+	mb_send_mail( 'info@venture-partners.co.jp', $admin_reply_subject, $admin_reply_text, $header);
 
         header("Location: ./thanks.php");
         exit;
