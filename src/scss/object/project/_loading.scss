@@ -15,6 +15,9 @@
         max-width: 320px;
         margin: auto;
         animation: text-down 6.3s;
+        @include mq-down(md) {
+            bottom: 23%;
+        }
         @include mq-up(lg) {
             max-width: 800px;
         }
@@ -35,6 +38,9 @@
     background-color: #fff;
     content: "";
     animation: text-in 7s ease-in-out .6s;
+    @include mq-down(md) {
+        bottom: 23%;
+    }
     @include mq-up(lg) {
         width: 800px;
         height: 100px;

@@ -1387,6 +1387,9 @@ h3.c-sectiontitel {
     margin: auto;
     -webkit-animation: text-down 6.3s;
             animation: text-down 6.3s; }
+    @media screen and (max-width: 767px) {
+      .p-loading img {
+        bottom: 23%; } }
     @media screen and (min-width: 1090px) {
       .p-loading img {
         max-width: 800px; } }
@@ -1406,6 +1409,9 @@ h3.c-sectiontitel {
   content: "";
   -webkit-animation: text-in 7s ease-in-out .6s;
           animation: text-in 7s ease-in-out .6s; }
+  @media screen and (max-width: 767px) {
+    .p-loading::before {
+      bottom: 23%; } }
   @media screen and (min-width: 1090px) {
     .p-loading::before {
       width: 800px;
