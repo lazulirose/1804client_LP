@@ -167,10 +167,10 @@
 .l-footer {
     position: relative;
     width: 100%;
-    padding: 90px 20px 60px;
+    padding: 50px 20px 30px;
     color: #fff;
     background-color: #333;
     @include mq-up(lg) {
-        padding: 90px 20px;
+        padding: 50px 20px;
     }
 }

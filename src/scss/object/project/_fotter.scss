@@ -10,45 +10,64 @@ Fotter style
 
 .p-footer__logo {
     width: 180px;
-    margin: 0 auto 60px;
+    margin: 0 auto 40px;
 }
 
 .p-footer__nav {
     ul {
         display: flex;
-        margin-bottom: 90px;
+        width: 100%;
+        padding: 0 40px;
+        margin: 0 auto 40px;
         justify-content: center;
-        flex-direction: column;
-        @include mq-up(lg) {
-            margin-bottom: 120px;
-            flex-direction: row;
-            align-content: center;
-            align-items: center;
+        flex-wrap: wrap;
+        @include mq-down(lg) {
+            max-width: 530px;
         }
     }
-    li:not(:first-child) {
-        margin-top: 35px;
+    li {
+        @include mq-down(lg) {
+            position: relative;
+            width: 40%;
+            max-width: 150px;
+            margin-bottom: 14px;
+        }
         @include mq-up(lg) {
-            margin-top: 0;
             margin-left: 24px;
+        }
+    }
+    li:last-child {
+        @include mq-down(lg) {
+            width: 80%;
+            max-width: 300px;
+            margin-right: 40px;
+            margin-bottom: 0;
+        }
+    }
+    li:not(:nth-child(odd)) {
+        margin-left: 40px;
+    }
+    li:not(:nth-child(odd))::after {
+        @include mq-down(lg) {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -24px;
+            content: "|";
         }
     }
     a {
         display: block;
         margin-bottom: 0;
         color: #fff;
-        font-size: 20px;
-        text-align: center;
-        @include mq-up(lg) {
-            font-size: 14px;
-        }
+        font-size: 11px;
     }
 }
 
 .p-copyright {
     display: block;
     margin: auto;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: lighter;
     text-align: center;
 }

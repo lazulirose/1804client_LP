@@ -725,12 +725,12 @@ label {
 .l-footer {
   position: relative;
   width: 100%;
-  padding: 90px 20px 60px;
+  padding: 50px 20px 30px;
   color: #fff;
   background-color: #333; }
   @media screen and (min-width: 1090px) {
     .l-footer {
-      padding: 90px 20px; } }
+      padding: 50px 20px; } }
 
 /*****-------------------------------
 
@@ -2412,53 +2412,62 @@ Fotter style
 
 .p-footer__logo {
   width: 180px;
-  margin: 0 auto 60px; }
+  margin: 0 auto 40px; }
 
 .p-footer__nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 90px;
+  width: 100%;
+  padding: 0 40px;
+  margin: 0 auto 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  @media screen and (min-width: 1090px) {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media screen and (max-width: 1090px) {
     .p-footer__nav ul {
-      margin-bottom: 120px;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -ms-flex-line-pack: center;
-          align-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; } }
+      max-width: 530px; } }
 
-.p-footer__nav li:not(:first-child) {
-  margin-top: 35px; }
-  @media screen and (min-width: 1090px) {
-    .p-footer__nav li:not(:first-child) {
-      margin-top: 0;
-      margin-left: 24px; } }
+@media screen and (max-width: 1090px) {
+  .p-footer__nav li {
+    position: relative;
+    width: 40%;
+    max-width: 150px;
+    margin-bottom: 14px; } }
+
+@media screen and (min-width: 1090px) {
+  .p-footer__nav li {
+    margin-left: 24px; } }
+
+@media screen and (max-width: 1090px) {
+  .p-footer__nav li:last-child {
+    width: 80%;
+    max-width: 300px;
+    margin-right: 40px;
+    margin-bottom: 0; } }
+
+.p-footer__nav li:not(:nth-child(odd)) {
+  margin-left: 40px; }
+
+@media screen and (max-width: 1090px) {
+  .p-footer__nav li:not(:nth-child(odd))::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -24px;
+    content: "|"; } }
 
 .p-footer__nav a {
   display: block;
   margin-bottom: 0;
   color: #fff;
-  font-size: 20px;
-  text-align: center; }
-  @media screen and (min-width: 1090px) {
-    .p-footer__nav a {
-      font-size: 14px; } }
+  font-size: 11px; }
 
 .p-copyright {
   display: block;
   margin: auto;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: lighter;
   text-align: center; }
