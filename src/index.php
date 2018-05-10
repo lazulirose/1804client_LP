@@ -51,23 +51,18 @@
             <div id="loader" class="l-loading">
 
                 <div id="loader-text" class="p-loading tagline">
-                    <img src="./images/tagline-black.png" alt="">
+                    <img src="./images/tagline-black.png" alt="人生はココカラ始まる">
                 </div>
             </div>
             <div class="l-keyviasual">
                 <div class="p-keyviasual">
-                    <img class="p-keyviasual__bg" src="./images/top-pc.png" alt="">
-                    <p class="p-keyviasual__bg"></p>
-                    <!--
-
-<video class="p-keyviasual__bg" poster="" autoplay loop muted>
-            <source src="https://t.pimg.jp/mp4/005/734/849/1/5734849.mp4">
-
+                    <video class="p-keyviasual__bg pc-only" poster="" autoplay loop muted>
+                    <source src="./images/firstview-bg.mp4">
                 </video>
--->
+                    <img class="p-keyviasual__bg sp-only" src="./images/firstview-bg.gif" alt="KOKOKARA（ココカラ）PR">
                 </div>
                 <div class="p-keyviasual__tagline">
-                    <img src="./images/tagline.png" alt="">
+                    <img src="./images/tagline.png" alt="人生はココカラ始まる">
                 </div>
                 <p class="p-keyviasual__text">18歳〜26歳(関西在住・非大卒)限定<br>「変わりたい」を実現する、半年インターン<br class="sp-only">「KOKOKARA（ココカラ）」</p>
                 <div class="p-keyviasual__scroll">
@@ -93,7 +88,7 @@
                 <div class="p-contents__cards">
                     <div class="c-card is-show">
                         <span class="c-bach">FEATURE</span>
-                        <img class="c-card__media" src="./images/contents-1.jpg" alt="">
+                        <img class="c-card__media" src="./images/contents-1.jpg" alt="半年間給料ありで学べる">
                         <div class="c-card__body">
                             <p class="c-card__body--copy"><span>半年間</span><br><span>給与ありで</span><br><span>学べる</span></p>
                             <p class="c-card__text">成果報酬型の営業実務を通してお金を稼ぎながら成長と半年後のネクストアップを見つけられます。</p>
@@ -101,7 +96,7 @@
                     </div>
                     <div class="c-card is-show">
                         <span class="c-bach">FEATURE</span>
-                        <img class="c-card__media" src="./images/contents-2.jpg" alt="">
+                        <img class="c-card__media" src="./images/contents-2.jpg" alt="各業界のメンター・講師の存在">
                         <div class="c-card__body">
                             <p class="c-card__body--copy"><span>各業界の</span><br><span>メンター・</span><br><span>講師の存在</span></p>
                             <p class="c-card__text">起業家、活躍している社会人、フリーランス、旅人etcジャンルが違うメンターからのサポートがあります。ロールモデルから直接話を聞ける体験は貴重です。</p>
@@ -109,7 +104,7 @@
                     </div>
                     <div class="c-card is-show">
                         <span class="c-bach">FEATURE</span>
-                        <img class="c-card__media" src="./images/contents-3.jpg" alt="">
+                        <img class="c-card__media" src="./images/contents-3.jpg" alt="定期的なキャリア面談">
                         <div class="c-card__body">
                             <p class="c-card__body--copy"><span>定期的な</span><br><span>キャリア</span><br><span>面談</span></p>
                             <p class="c-card__text">半年終了後のネクストステップをメンターと共に考える時間です。希望の業界への就職（転職）、海外留学、企業etc 未来を共に描きます。</p>
@@ -117,7 +112,7 @@
                     </div>
                     <div class="c-card is-show">
                         <span class="c-bach">FEATURE</span>
-                        <img class="c-card__media" src="./images/contents-4.jpg" alt="">
+                        <img class="c-card__media" src="./images/contents-4.jpg" alt="実務・研修での成果">
                         <div class="c-card__body">
                             <p class="c-card__body--copy">
                                 <span>実務・</span><br><span>研修での</span><br><span>成果</span></p>
@@ -126,7 +121,7 @@
                     </div>
                     <div class="c-card is-show">
                         <span class="c-bach">FEATURE</span>
-                        <img class="c-card__media" src="./images/contents-5.jpg" alt="">
+                        <img class="c-card__media" src="./images/contents-5.jpg" alt="人生レベルの仲間ができる">
                         <div class="c-card__body">
                             <p class="c-card__body--copy">
                                 <span>人生レベルの</span><br><span>仲間が</span><br><span>できる</span>
@@ -136,7 +131,7 @@
                     </div>
                     <div class="c-card is-show">
                         <span class="c-bach">FEATURE</span>
-                        <img class="c-card__media" src="./images/contents-6.jpg" alt="">
+                        <img class="c-card__media" src="./images/contents-6.jpg" alt="半年終了後の奨学金">
                         <div class="c-card__body">
                             <p class="c-card__body--copy">
                                 <span>半年</span><br><span>終了後の</span><br><span>奨学金</span></p>
@@ -153,7 +148,7 @@
                 </div>
                 <div class="p-schedule__cards">
                     <div class="c-card is-show">
-                        <img class="c-card__media" src="./images/schedule-1.jpg" alt="">
+                        <img class="c-card__media" src="./images/schedule-1.jpg" alt="面談">
                         <div class="c-card__body">
                             <span class="c-bach">STEP1</span>
                             <h3 class="c-card__title">面談</h3>
@@ -165,7 +160,7 @@
                         </div>
                     </div>
                     <div class="c-card is-show">
-                        <img class="c-card__media" src="./images/schedule-2.jpg" alt="">
+                        <img class="c-card__media" src="./images/schedule-2.jpg" alt="入学（キャリア設計）">
                         <div class="c-card__body">
                             <span class="c-bach">STEP2</span>
                             <h3 class="c-card__title">入学（キャリア設計）</h3>
@@ -178,7 +173,7 @@
                         </div>
                     </div>
                     <div class="c-card is-show">
-                        <img class="c-card__media" src="./images/schedule-3.jpg" alt="">
+                        <img class="c-card__media" src="./images/schedule-3.jpg" alt="様々な価値観に触れる">
                         <div class="c-card__body">
                             <span class="c-bach">STEP3</span>
                             <h3 class="c-card__title">様々な価値観に触れる</h3>
@@ -190,7 +185,7 @@
                         </div>
                     </div>
                     <div class="c-card is-show">
-                        <img class="c-card__media" src="./images/schedule-4.jpg" alt="">
+                        <img class="c-card__media" src="./images/schedule-4.jpg" alt="望んだキャリアで実績を残す方法を学ぶ">
                         <div class="c-card__body">
                             <span class="c-bach">STEP4</span>
                             <h3 class="c-card__title">望んだキャリアで実績を残す方法を学ぶ</h3>
@@ -202,7 +197,7 @@
                         </div>
                     </div>
                     <div class="c-card is-show">
-                        <img class="c-card__media" src="./images/schedule-5.jpg" alt="">
+                        <img class="c-card__media" src="./images/schedule-5.jpg" alt="卒業（キャリア選択）">
                         <div class="c-card__body">
                             <span class="c-bach">STEP5</span>
                             <h3 class="c-card__title">卒業（キャリア選択）</h3>
@@ -215,7 +210,7 @@
                         </div>
                     </div>
                     <div class="c-card is-show">
-                        <img class="c-card__media" src="./images/schedule-6.jpg" alt="">
+                        <img class="c-card__media" src="./images/schedule-6.jpg" alt="奨学金制度">
                         <div class="c-card__body">
                             <span class="c-bach">STEP6</span>
                             <h3 class="c-card__title">奨学金制度</h3>

@@ -59,8 +59,8 @@
     background-color: #fff;
     content: "";
     @include mq-up(lg) {
-        top: -130px;
-        height: 370px;
+        top: -230px;
+        height: 500px;
     }
 }
 

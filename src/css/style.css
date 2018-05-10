@@ -589,8 +589,8 @@ label {
   content: ""; }
   @media screen and (min-width: 1090px) {
     .l-contents::after {
-      top: -130px;
-      height: 370px; } }
+      top: -230px;
+      height: 500px; } }
 
 .l-schedule {
   position: relative;
@@ -1426,20 +1426,32 @@ h3.c-sectiontitel {
     Keyviasual style
 -------------------------------*****/
 .p-keyviasual {
+  display: block;
+  position: relative;
+  top: 0;
+  bottom: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(43, 129, 160, 0.5);
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: rgba(43, 129, 160, 0.5); }
 
 .p-keyviasual__bg {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
+  position: absolute;
   z-index: -1000;
-  background-image: url(./../../../../images/top-pc.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  @media screen and (min-width: 1090px) {
+    .p-keyviasual__bg {
+      position: relative;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; } }
 
 .p-keyviasual__tagline {
   position: absolute;
@@ -1676,7 +1688,7 @@ h3.c-sectiontitel {
 @media screen and (min-width: 1090px) {
   .l-contents .c-sectiontitel,
   .l-contents .c-sectiontext {
-    margin-left: 90px;
+    padding-left: 20px;
     text-align: left; } }
 
 /*****-------------------------------
