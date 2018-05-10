@@ -46,10 +46,10 @@
     background-color: rgba(#fff, .9);
     content: "Comming soon.....";
     @include mq-up(sm) {
-        padding-top: 20%;
+        padding-top: 140px;
     }
     @include mq-up(md) {
-        padding-top: 8%;
+        padding-top: 80px;
     }
 }
 
@@ -59,10 +59,10 @@
     font-size: 14px;
     content: "ただいま準備中です";
     @include mq-up(sm) {
-        padding-top: 27%;
+        padding-top: 180px;
     }
     @include mq-up(md) {
-        padding-top: 13%;
+        padding-top: 120px;
     }
 }
 

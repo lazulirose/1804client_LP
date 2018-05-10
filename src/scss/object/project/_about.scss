@@ -20,8 +20,6 @@
         width: 535px;
         max-width: inherit;
         height: 383px;
-        margin-top: 15px;
-        margin-left: 30px;
         padding-right: 0;
     }
 }
@@ -72,7 +70,6 @@
 .l-about .c-sectiontitel,
 .l-about .c-sectiontext {
     @include mq-up(lg) {
-        margin-right: 32px;
         margin-bottom: -6px;
         text-align: right;
     }

@@ -38,7 +38,7 @@
         width: 100%;
         max-width: 1090px;
         margin: 0 auto 48px;
-        padding: 80px 0 0;
+        padding: 80px 20px 0;
     }
 }
 
@@ -107,7 +107,10 @@
 .l-partner {
     // todo
     position: relative;
-    padding: 55px 0 70px;
+    padding: 55px 0 0px;
+    @include mq-up(lg) {
+        padding-bottom: 70px;
+    }
 }
 
 .l-messege {

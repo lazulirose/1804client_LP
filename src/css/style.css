@@ -569,7 +569,7 @@ label {
       width: 100%;
       max-width: 1090px;
       margin: 0 auto 48px;
-      padding: 80px 0 0; } }
+      padding: 80px 20px 0; } }
 
 .l-contents {
   position: relative;
@@ -640,7 +640,10 @@ label {
 
 .l-partner {
   position: relative;
-  padding: 55px 0 70px; }
+  padding: 55px 0 0px; }
+  @media screen and (min-width: 1090px) {
+    .l-partner {
+      padding-bottom: 70px; } }
 
 .l-messege {
   position: relative;
@@ -1491,11 +1494,14 @@ h3.c-sectiontitel {
 .p-keyviasual__scroll {
   position: absolute;
   right: 0;
-  bottom: 10%;
+  bottom: 15%;
   left: 0;
   width: 100%;
   margin: auto;
   text-align: center; }
+  @media screen and (min-width: 768px) {
+    .p-keyviasual__scroll {
+      bottom: 10%; } }
 
 .p-keyviasual__scroll__text {
   margin-bottom: 5px;
@@ -1540,8 +1546,6 @@ h3.c-sectiontitel {
       width: 535px;
       max-width: inherit;
       height: 383px;
-      margin-top: 15px;
-      margin-left: 30px;
       padding-right: 0; } }
 
 .p-about__body {
@@ -1583,7 +1587,6 @@ h3.c-sectiontitel {
 @media screen and (min-width: 1090px) {
   .l-about .c-sectiontitel,
   .l-about .c-sectiontext {
-    margin-right: 32px;
     margin-bottom: -6px;
     text-align: right; } }
 
@@ -2015,10 +2018,10 @@ input:checked ~ .p-qa__container--a {
   content: "Comming soon....."; }
   @media screen and (min-width: 481px) {
     .p-partner::before {
-      padding-top: 20%; } }
+      padding-top: 140px; } }
   @media screen and (min-width: 768px) {
     .p-partner::before {
-      padding-top: 8%; } }
+      padding-top: 80px; } }
 
 .p-partner::after {
   height: 100%;
@@ -2027,10 +2030,10 @@ input:checked ~ .p-qa__container--a {
   content: "ただいま準備中です"; }
   @media screen and (min-width: 481px) {
     .p-partner::after {
-      padding-top: 27%; } }
+      padding-top: 180px; } }
   @media screen and (min-width: 768px) {
     .p-partner::after {
-      padding-top: 13%; } }
+      padding-top: 120px; } }
 
 .p-partner--banners {
   display: -webkit-box;
@@ -2185,8 +2188,8 @@ input:checked ~ .p-qa__container--a {
       margin-bottom: 35px;
       margin-left: 40px;
       border-radius: 30px;
-      font-size: 18px;
-      line-height: 3.5; } }
+      font-size: 16px;
+      line-height: 4; } }
 
 @media screen and (min-width: 1090px) {
   .p-bach--circle:nth-child(3n+1) {

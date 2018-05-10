@@ -84,11 +84,14 @@
 .p-keyviasual__scroll {
     position: absolute;
     right: 0;
-    bottom: 10%;
+    bottom: 15%;
     left: 0;
     width: 100%;
     margin: auto;
     text-align: center;
+    @include mq-up(md) {
+        bottom: 10%;
+    }
 }
 
 .p-keyviasual__scroll__text {

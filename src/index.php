@@ -140,7 +140,7 @@
                         <div class="c-card__body">
                             <p class="c-card__body--copy">
                                 <span>半年</span><br><span>終了後の</span><br><span>奨学金</span></p>
-                            <p class="c-card__text">半年終了後に、ネクストステップ（転職、留学、企業etc）に映る際、半年間の成果に応じて新たなチャレンジを応援する奨学金を支給します。（数万〜数十万）</p>
+                            <p class="c-card__text">半年終了後に、ネクストステップ（転職、留学、企業etc）に移る際、半年間の成果に応じて新たなチャレンジを応援する奨学金を支給します。（数万〜数十万）</p>
                         </div>
                     </div>
                 </div>
@@ -711,14 +711,6 @@
                                             </div>
                                             <div class="slides--pc">
                                                 <div class="slide">
-                                                    <img class="p-slides__media" src="./images/slider-3.png" alt="">
-                                                    <div class="p-slides__body">
-                                                        <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
-                                                        <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
-                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide">
                                                     <img class="p-slides__media" src="./images/slider-1.png" alt="">
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
@@ -728,6 +720,14 @@
                                                 </div>
                                                 <div class="slide">
                                                     <img class="p-slides__media" src="./images/slider-2.png" alt="">
+                                                    <div class="p-slides__body">
+                                                        <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
+                                                        <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
+                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
+                                                    </div>
+                                                </div>
+                                                <div class="slide">
+                                                    <img class="p-slides__media" src="./images/slider-3.png" alt="">
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
                                                         <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
@@ -832,14 +832,6 @@
                                                 </div>
                                                 <div class="slide">
                                                     <img class="p-slides__media" src="./images/slider-2.png" alt="">
-                                                    <div class="p-slides__body">
-                                                        <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
-                                                        <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
-                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide">
-                                                    <img class="p-slides__media" src="./images/slider-3.png" alt="">
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
                                                         <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
@@ -951,7 +943,7 @@
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
                                                         <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
-                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
+                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りまp-slides__mediaすここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
                                                     </div>
                                                 </div>
                                                 <div class="slide">
@@ -1111,7 +1103,7 @@
                     </label>
                         <div class="p-qa__container--a">
                             <span>A.</span>
-                            <p>可必要です。親御様のご理解の元、参加をお願い致します。</p>
+                            <p>必要です。親御様のご理解の元、参加をお願い致します。</p>
                         </div>
                     </div>
                     <div class="c-accordion is-show">
