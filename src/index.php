@@ -56,10 +56,9 @@
             </div>
             <div class="l-keyviasual">
                 <div class="p-keyviasual">
-                    <video class="p-keyviasual__bg pc-only" poster="" autoplay loop muted>
+                    <video class="p-keyviasual__bg" id="js-autoplay" poster="./images/firstview-bg.gif" preload="none" autoplay loop muted playsinline>
                     <source src="./images/firstview-bg.mp4">
                 </video>
-                    <img class="p-keyviasual__bg sp-only" src="./images/firstview-bg.gif" alt="KOKOKARA（ココカラ）PR">
                 </div>
                 <div class="p-keyviasual__tagline">
                     <img src="./images/tagline.png" alt="人生はココカラ始まる">
@@ -74,7 +73,7 @@
                 <h2 class="c-sectiontitel is-show">About</h2>
                 <p class="c-sectiontext is-show">KOKOKARAについて</p>
                 <div class="p-about">
-                    <img class="p-about__viasual is-show" src="./images/about.png" alt="">
+                    <img class="p-about__viasual is-show" src="./images/about.png" alt="KOKOKARAについて、Aboutイメージ">
                     <div class="p-about__body is-show">
                         <p class="p-about__body__copy"><span>自分を見つける</span><br><span>半年集中型、社会人インターン</span></p>
                         <p class="p-about__body__text">“漠然と今の自分を変えたい”、”こういう風になりたい”と思っていても何から始めれば良いのか、どうしたら良いのかわからない18歳〜26歳の社会人が自分がなりたい像を見つけ、実現する力と新たな環境へステップアップするための、半年集中型、社会人インターンです。</p>
@@ -732,14 +731,6 @@
                                             </div>
                                             <div class="slides--pc">
                                                 <div class="slide">
-                                                    <img class="p-slides__media" src="./images/slider-3.png" alt="">
-                                                    <div class="p-slides__body">
-                                                        <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
-                                                        <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
-                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide">
                                                     <img class="p-slides__media" src="./images/slider-1.png" alt="">
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
@@ -749,6 +740,14 @@
                                                 </div>
                                                 <div class="slide">
                                                     <img class="p-slides__media" src="./images/slider-2.png" alt="">
+                                                    <div class="p-slides__body">
+                                                        <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
+                                                        <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
+                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
+                                                    </div>
+                                                </div>
+                                                <div class="slide">
+                                                    <img class="p-slides__media" src="./images/slider-3.png" alt="">
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
                                                         <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
@@ -758,14 +757,6 @@
                                             </div>
                                             <div class="slides--pc">
                                                 <div class="slide">
-                                                    <img class="p-slides__media" src="./images/slider-3.png" alt="">
-                                                    <div class="p-slides__body">
-                                                        <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
-                                                        <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
-                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide">
                                                     <img class="p-slides__media" src="./images/slider-1.png" alt="">
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
@@ -775,6 +766,14 @@
                                                 </div>
                                                 <div class="slide">
                                                     <img class="p-slides__media" src="./images/slider-2.png" alt="">
+                                                    <div class="p-slides__body">
+                                                        <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
+                                                        <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
+                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
+                                                    </div>
+                                                </div>
+                                                <div class="slide">
+                                                    <img class="p-slides__media" src="./images/slider-3.png" alt="">
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
                                                         <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
@@ -784,14 +783,6 @@
                                             </div>
                                             <div class="slides--pc">
                                                 <div class="slide">
-                                                    <img class="p-slides__media" src="./images/slider-3.png" alt="">
-                                                    <div class="p-slides__body">
-                                                        <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
-                                                        <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
-                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide">
                                                     <img class="p-slides__media" src="./images/slider-1.png" alt="">
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
@@ -801,6 +792,14 @@
                                                 </div>
                                                 <div class="slide">
                                                     <img class="p-slides__media" src="./images/slider-2.png" alt="">
+                                                    <div class="p-slides__body">
+                                                        <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
+                                                        <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
+                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
+                                                    </div>
+                                                </div>
+                                                <div class="slide">
+                                                    <img class="p-slides__media" src="./images/slider-3.png" alt="">
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
                                                         <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
@@ -810,14 +809,6 @@
                                             </div>
                                             <div class="slides--pc">
                                                 <div class="slide">
-                                                    <img class="p-slides__media" src="./images/slider-3.png" alt="">
-                                                    <div class="p-slides__body">
-                                                        <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
-                                                        <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
-                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide">
                                                     <img class="p-slides__media" src="./images/slider-1.png" alt="">
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
@@ -827,6 +818,14 @@
                                                 </div>
                                                 <div class="slide">
                                                     <img class="p-slides__media" src="./images/slider-2.png" alt="">
+                                                    <div class="p-slides__body">
+                                                        <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
+                                                        <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
+                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
+                                                    </div>
+                                                </div>
+                                                <div class="slide">
+                                                    <img class="p-slides__media" src="./images/slider-3.png" alt="">
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
                                                         <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
@@ -938,7 +937,7 @@
                                                     <div class="p-slides__body">
                                                         <div class="p-slides__body--title">KOKOKARA 第1期卒業生</div>
                                                         <div class="p-slides__body--name"><span>村川 昂功</span>MURAKAWA TAKANORI</div>
-                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りまp-slides__mediaすここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
+                                                        <div class="p-slides__body--text">ここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入りますここに100文字程で感想が入りますここに100文字程度で感想が入りますここに100文字程度で感想が入ります</div>
                                                     </div>
                                                 </div>
                                                 <div class="slide">
@@ -1241,10 +1240,15 @@
         </footer>
         <!-- /.l-footer -->
     </div>
-    <script src="./js/smooth-scroll.js"></script>
-    <script src="./js/scrollreveal.min.js"></script>
-    <script src="./js/contact.js"></script>
+    <script src="./js/kokokara.js"></script>
     <script>
+        let video = document.getElementById("js-autoplay");
+        let play = video.play();
+        if (play instanceof Promise) {
+            play.catch(error => {
+                console.error('自動再生できません');
+            });
+        }
         window.onload = function() {
             var lastWidget = document.getElementById("about");
             var distanceFromTheTop = lastWidget.getBoundingClientRect().top + window.pageYOffset;
@@ -1256,23 +1260,6 @@
                 }
             }
         }
-        const loading = document.getElementById("loader-text");
-        const bg = document.getElementById("loader");
-        loading.addEventListener("animationend", function() {
-            fadeOut(bg, 00);
-            document.getElementById("index").style.position = "relative";
-            if (document.location.hash == "#about") {
-                window.location.href = "#about"
-            } else if (document.location.hash == "#contents") {
-                window.location.href = "#contents"
-            } else if (document.location.hash == "#schedule") {
-                window.location.href = "#schedule"
-            } else if (document.location.hash == "#entry") {
-                window.location.href = "#entry"
-            } else {
-                return;
-            }
-        });
 
         function navigationTrigger() {
             const x = document.getElementById("is-open");
@@ -1319,7 +1306,6 @@
             });
         }
         //Use to the library setting
-
         window.sr = ScrollReveal({
             reset: false,
             mobile: true
@@ -1330,6 +1316,24 @@
             opacity: 0,
         });
         var scroll = new SmoothScroll('a[href*="#"]');
+
+        const loading = document.getElementById("loader-text");
+        const bg = document.getElementById("loader");
+        loading.addEventListener("animationend", function() {
+            fadeOut(bg, 00);
+            document.getElementById("index").style.position = "relative";
+            if (document.location.hash == "#about") {
+                window.location.href = "#about"
+            } else if (document.location.hash == "#contents") {
+                window.location.href = "#contents"
+            } else if (document.location.hash == "#schedule") {
+                window.location.href = "#schedule"
+            } else if (document.location.hash == "#entry") {
+                window.location.href = "#entry"
+            } else {
+                return;
+            }
+        });
 
     </script>
 </body>

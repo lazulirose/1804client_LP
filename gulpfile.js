@@ -33,7 +33,7 @@ gulp.task("pug", function () {
 gulp.task("js", function () {
     gulp.src(["src/js/**/*.js", "!src/js/min/**/*.js"])
         .pipe(plumber())
-        .pipe(sass())
+        .pipe(scss())
         .pipe(autoprefixer())
         .pipe(gulp.dest("src/css"))
         .pipe(rename({
@@ -51,12 +51,12 @@ gulp.task("scss", function () {
         .pipe(plumber())
         .pipe(scss())
         .pipe(autoprefixer())
+        .pipe(uglify())
         .pipe(gulp.dest("src/css"))
         .pipe(browser.reload({
             stream: true
         }))
 });
-
 gulp.task("img", function () {
     return gulp.src("src/images/*")
         .pipe(img({
@@ -65,3 +65,4 @@ gulp.task("img", function () {
         }))
         .pipe(gulp.dest("src/images/dist"));
 });
+
